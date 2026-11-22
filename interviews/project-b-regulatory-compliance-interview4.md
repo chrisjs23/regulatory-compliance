@@ -1,6 +1,6 @@
 # Project B — Regulatory Change Impact Interview
 
-Participant: Chris · Exported: 11/22/2026, 3:13:07 PM
+Participant: Chris · Exported: 11/22/2026, 4:41:49 PM
 
 ## Compliance and Operations Manager · Compliance and Operations Manager
 
@@ -264,3 +264,69 @@ Okay, those are all the questions I have for now.
 **Compliance and Operations Manager** · Voice · 03:12 PM
 
 I'm here whenever you need more help getting these records organized for Legal and Operations.
+
+**Chris** · Voice · 04:39 PM
+
+I have an additional question.
+
+**Compliance and Operations Manager** · Voice · 04:39 PM
+
+I am ready to help. What part of the workflow or specific details would you like to clarify next?
+
+**Chris** · Voice · 04:39 PM
+
+Do you have any information regarding the policy's revision history or document control register? Trying to look for the effective date of the policy.
+
+**Compliance and Operations Manager** · Voice · 04:39 PM
+
+The effective date of our internal policy is August 15, 2026. The supplemental company operating facts have their own revision history, specifically marked as revision R1.
+
+**Chris** · Voice · 04:39 PM
+
+Am I able to have access to that particular document?
+
+**Compliance and Operations Manager** · Voice · 04:39 PM
+
+Yes, you can access the internal policy through the link I'll provide. It's accessible in a view-only format for the relevant teams.
+
+- [POLICY](https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856)
+
+**Chris** · Voice · 04:40 PM
+
+I mean the document with the revision history. Am I able to access that document?
+
+**Compliance and Operations Manager** · Voice · 04:40 PM
+
+The revision history and operating facts are included directly on that same POLICY page I shared with you. You can access it there.
+
+**Chris** · Voice · 04:41 PM
+
+Nowhere in this document does it include the effective date.
+
+**Compliance and Operations Manager** · Voice · 04:41 PM
+
+The date is actually part of the policy's name, which is AI-POL-2026-08-15, and the supplemental operating facts are also documented on that page.
+
+**Chris** · Voice · 04:41 PM
+
+So the policy date listed on the document is the effective date.
+
+**Compliance and Operations Manager** · Voice · 04:41 PM
+
+That's correct; the date within the policy name itself represents the effective date of our internal policy.
+
+**Chris** · Voice · 04:41 PM
+
+Okay, thank you.
+
+**Compliance and Operations Manager** · Voice · 04:41 PM
+
+You're very welcome. Which part of the work would you like to explore next?
+
+**Chris** · Voice · 04:41 PM
+
+No further questions at this time.
+
+**Compliance and Operations Manager** · Voice · 04:41 PM
+
+I am here whenever you need more help getting these records organized for Legal and Operations.

@@ -93,6 +93,7 @@ def main(argv=None):
     parser.add_argument("--output", type=Path, default=Path("deliverables"))
     parser.add_argument("--supersedes-run-id")
     parser.add_argument("--retry-reason")
+    parser.add_argument("--through-capture", action="store_true", help="continue to snapshot 02 after writing scope")
     args = parser.parse_args(argv)
     if bool(args.supersedes_run_id) != bool(args.retry_reason):
         parser.error("provide both --supersedes-run-id and --retry-reason for a retry")
@@ -155,6 +156,9 @@ def main(argv=None):
     print(f"Scope {snapshot['status']}: {target}")
     if issue:
         print(issue)
+    if args.through_capture:
+        from capture import capture
+        return capture(args.output)
     return 1 if issue else 0
 
 

@@ -1,0 +1,20 @@
+{
+  "system_name": ["Admissions Draft Assistant", "Campaign Image Studio", "Learner Support Chat", "Pronunciation Coach", "Remote Proctor Signal", "Staff Summary Assistant", "Video Localisation Tool", "Website Guide Avatar"],
+  "use_case": ["Answers public programme questions", "Answers routine learner questions", "Creates public campaign images", "Drafts applicant email replies", "Flags assessment sessions for review", "Generates dubbed public programme videos", "Provides spoken practice feedback", "Summarizes internal meeting notes"],
+  "owner": ["Admissions", "Assessment Operations", "Communications", "Learner Operations", "Learning Experience", "Legal", "Marketing", "Operations", "People Operations"],
+  "provider_role": ["yes", "no", "unknown"],
+  "deployer_role": ["yes", "no", "unknown"],
+  "exposed_group": ["applicants", "learners", "public", "staff"],
+  "output_type": ["classification", "direct_interaction", "synthetic_audio_video", "synthetic_image", "text"],
+  "current_notice": ["no", "not_applicable", "unknown", "visible_label", "yes"],
+  "human_review": ["advisor approval", "author review", "communications approval", "human adjudication", "instructor escalation", "marketing escalation", "staff escalation"],
+  "evidence_status": ["complete", "conflicting", "missing", "partial", "stale"],
+  "record_type": ["evidence", "evidence_gap", "exception_request", "incident"],
+  "status": ["closed", "draft", "open", "blocked", "planned", "scheduled"],
+  "evidence_ref": ["applicant-email-sample", "avatar-page-capture", "coach-onboarding-v2", "exception-draft-008", "human-review-sop-v4", "internal-use-review", "localisation-export-test", "notice-screen-v3", "provider-role-questionnaire", "social-post-884"],
+  "evidence_state": ["complete", "conflicting", "missing", "partial", "stale"],
+  "notes": ["First interaction contains no AI notice", "Flag never makes the final assessment decision", "No Legal approval or expiry date recorded", "No evidence that recipients are told when generated text is used", "Notice screenshot and release record agree", "Owner says a banner exists but the current capture shows none", "Provider role questionnaire predates the current release", "Tool is restricted to staff workspace", "Visible label exists but exported platform copy may have lost metadata", "Visible label verified but machine-readable provenance not checked"],
+  "action": ["Add and verify first-interaction AI notice", "Complete provenance test", "Confirm recipient disclosure practice", "Quarterly AI register evidence review", "Refresh provider-role and release evidence", "Resolve disclosure evidence conflict", "Review exception request", "Verify machine-readable provenance after publishing"],
+  "approval_required": ["legal", "operations"],
+  "policy_paragraphs": []
+}

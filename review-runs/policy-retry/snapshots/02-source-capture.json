@@ -1,0 +1,393 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "8e698a93-b018-4e78-970f-bb4199f47074",
+  "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-11-22T21:32:16.392842+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "46ec1a51-45b9-453a-a66b-204549ad4535",
+    "path": "snapshots/01-scope.json",
+    "sha256": "sha256:de33d6757a59ba69428957ba5d93cb51e8f7b614507fe17fe2b0205f4b8a9b23"
+  },
+  "consumed_record_ids": [
+    "source-systems-scope",
+    "scope-selection"
+  ],
+  "produced_record_ids": [
+    "source-law",
+    "source-oj",
+    "source-amend",
+    "source-consolidated",
+    "source-time",
+    "source-faq",
+    "source-policy",
+    "source-systems",
+    "source-evidence",
+    "source-calendar",
+    "source-policy-browser-1",
+    "source-policy-browser-2",
+    "gap-source-time",
+    "gap-source-policy",
+    "gap-source-policy-browser-1",
+    "gap-source-policy-browser-2",
+    "capture-retention"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "source-systems-scope",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "retrieved_at": "2026-11-22T21:25:57.735484+00:00",
+        "content_type": "text/csv",
+        "content_hash": "sha256:19e5d4ef17c533c1d6951e9334b3f3628471ca864b45dfa3cf2ee47d0145b0eb",
+        "local_reference": "sources/systems-scope.json",
+        "version_metadata": {
+          "by_system": {
+            "AI-001": "register-2026-08-26",
+            "AI-002": "register-2026-08-26",
+            "AI-003": "register-2026-08-26",
+            "AI-004": "register-2026-08-26",
+            "AI-005": "register-2026-08-26",
+            "AI-006": "register-2026-08-26",
+            "AI-007": "register-2026-08-26",
+            "AI-008": "register-2026-08-26"
+          }
+        },
+        "evidence_ids": [],
+        "authority": "operational-evidence",
+        "source_role": "operational-record",
+        "retrieval_status": "retrieved",
+        "summary": "System identifiers and row revisions from the default tab.",
+        "label": "SYSTEMS"
+      },
+      {
+        "id": "source-law",
+        "label": "LAW",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:10.282392+00:00",
+        "version_metadata": {
+          "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+          "stated_dates": [
+            "27 July 2026"
+          ]
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:53e13883cbfaa441cbfd9d2dbb5551ef9861dab4e9d46db4201df748cae51677",
+        "local_reference": "sources/capture/law.json",
+        "access_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Service Desk text carries a currency disclaimer; check official editions at stage 03."
+      },
+      {
+        "id": "source-oj",
+        "label": "OJ",
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:10.977207+00:00",
+        "version_metadata": {
+          "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+          "stated_dates": [],
+          "edition": "2024/1689 OJ"
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:428c54d36a0c24f9aac870c36bec34dab8d6a9b4b9f8639b3439d596d7326dd5",
+        "local_reference": "sources/capture/oj.json",
+        "access_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Document identified; claim applicability requires stage 03 review."
+      },
+      {
+        "id": "source-amend",
+        "label": "AMEND",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:12.157701+00:00",
+        "version_metadata": {
+          "title": "Regulation - EU - 2026/1744 - EN - EUR-Lex",
+          "stated_dates": [],
+          "edition": "2026/1744 OJ"
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:068fc1cea6e34cd7d114b4d9da545f1b1e481f1ce399b78daf75e3d1d0b3cbbd",
+        "local_reference": "sources/capture/amend.json",
+        "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Document identified; claim applicability requires stage 03 review."
+      },
+      {
+        "id": "source-consolidated",
+        "label": "CONSOLIDATED",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "source_role": "other",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:13.014521+00:00",
+        "version_metadata": {
+          "title": "EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
+          "stated_dates": [],
+          "edition": "02024R1689-20260727"
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:5c1fd85ad739f4ca1459f62b3d3ce6a6bdc1f9e0b2bbbef4749e161674bb9510",
+        "local_reference": "sources/capture/consolidated.json",
+        "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Document identified; claim applicability requires stage 03 review."
+      },
+      {
+        "id": "source-time",
+        "label": "TIME",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:13.796623+00:00",
+        "version_metadata": {
+          "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+          "stated_dates": []
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:2310fcd37f73f84799cb81137bdf5d7915f8294c3b34de8935d887f34ba6bd36",
+        "local_reference": "sources/capture/time.json",
+        "access_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "http_status": 200,
+        "retrieval_status": "unverified",
+        "summary": "Could not establish a page version suitable for the review day."
+      },
+      {
+        "id": "source-faq",
+        "label": "FAQ",
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:14.188058+00:00",
+        "version_metadata": {
+          "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+          "stated_dates": [
+            "24 July 2026"
+          ]
+        },
+        "content_type": "text/html",
+        "content_hash": "sha256:ee4c68f332ee2d754a1dc833c2acf3c45e3b7093121940cbd7a840b05ba75cdd",
+        "local_reference": "sources/capture/faq.json",
+        "access_url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Document identified; claim applicability requires stage 03 review."
+      },
+      {
+        "id": "source-policy",
+        "label": "POLICY",
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:14.456375+00:00",
+        "version_metadata": null,
+        "content_type": "text/plain",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "http_status": 403,
+        "retrieval_status": "unavailable",
+        "summary": "HTTP 403 on the disclosed route."
+      },
+      {
+        "id": "source-systems",
+        "label": "SYSTEMS",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:14.518810+00:00",
+        "version_metadata": {
+          "row_revisions_or_dates": [
+            "2026-04-15",
+            "2026-07-01",
+            "2026-08-14",
+            "2026-08-18",
+            "2026-08-19",
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-22",
+            "register-2026-08-26"
+          ]
+        },
+        "content_type": "text/csv",
+        "content_hash": "sha256:37d4bab3a4cd58f666f1c9478498d8143c8d93494da6008da959e8e48785f645",
+        "local_reference": "sources/capture/systems.json",
+        "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Captured 8 selected rows from SYSTEMS.",
+        "issues": []
+      },
+      {
+        "id": "source-evidence",
+        "label": "EVIDENCE",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:15.205803+00:00",
+        "version_metadata": {
+          "row_revisions_or_dates": [
+            "2026-08-14",
+            "2026-08-18",
+            "2026-08-19",
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-23",
+            "2026-08-24",
+            "2026-08-25",
+            "2026-08-26"
+          ]
+        },
+        "content_type": "text/csv",
+        "content_hash": "sha256:04b8f773b1722969565a0a88394ca4395d0ecc7eccde66c5793e989556f016c8",
+        "local_reference": "sources/capture/evidence.json",
+        "access_url": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk/export?format=csv",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Captured 10 selected rows from EVIDENCE.",
+        "issues": []
+      },
+      {
+        "id": "source-calendar",
+        "label": "CALENDAR",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T21:32:15.797974+00:00",
+        "version_metadata": {
+          "row_revisions_or_dates": [
+            "calendar-2026-08-26"
+          ]
+        },
+        "content_type": "text/csv",
+        "content_hash": "sha256:822a3446af2e824293f3390c9e37dafb671935f47a1b684f29d75ffef6b64820",
+        "local_reference": "sources/capture/calendar.json",
+        "access_url": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA/export?format=csv",
+        "http_status": 200,
+        "retrieval_status": "retrieved",
+        "summary": "Captured 8 selected rows from CALENDAR.",
+        "issues": []
+      },
+      {
+        "id": "source-policy-browser-1",
+        "label": "POLICY",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "evidence_ids": [],
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "retrieved_at": "2026-11-22T21:29:20.448Z",
+        "content_type": "application/json",
+        "method": "operator-selected browser extract",
+        "version_metadata": null,
+        "retrieval_status": "unverified",
+        "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+        "local_reference": "sources/capture/policy-browser-1.json",
+        "content_hash": "sha256:78b52f745447795ed630f608c7676ed6d81ed2fdc74e9b2a83a1af5e0ebeab51"
+      },
+      {
+        "id": "source-policy-browser-2",
+        "label": "POLICY",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "evidence_ids": [],
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "retrieved_at": "2026-11-22T21:30:00.175Z",
+        "content_type": "application/json",
+        "method": "operator-selected browser extract",
+        "version_metadata": null,
+        "retrieval_status": "unverified",
+        "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+        "local_reference": "sources/capture/policy-browser-2.json",
+        "content_hash": "sha256:4a57c4b4c66078df47f442254a30132f637704f4949a7321c74547e7f2e3a09d"
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-1",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-1"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-2",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-2"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "capture-retention",
+      "summary": "Retain reviewable public text and selected operational extracts.",
+      "evidence_ids": [
+        "source-systems-scope",
+        "source-law",
+        "source-oj",
+        "source-amend",
+        "source-consolidated",
+        "source-time",
+        "source-faq",
+        "source-policy",
+        "source-systems",
+        "source-evidence",
+        "source-calendar",
+        "source-policy-browser-1",
+        "source-policy-browser-2"
+      ],
+      "concern": "Preserve source evidence within disclosure limits.",
+      "options": [
+        "Full captures",
+        "Selected extracts with locators"
+      ],
+      "chosen": "Selected extracts with locators",
+      "source_basis": "Requester interview and actual responses.",
+      "rationale": "Persist only permitted internal fields. Keep version uncertainty and failed attempts visible.",
+      "tradeoffs": [
+        "Changed internal prose can need privacy review before inclusion."
+      ],
+      "downstream_effect": "Stage 03 must resolve authority blockers before formal dependent conclusions."
+    }
+  ]
+}

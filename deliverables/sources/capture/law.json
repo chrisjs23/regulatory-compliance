@@ -1,0 +1,825 @@
+{
+  "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+  "blocks": [
+    {
+      "block": 1,
+      "text": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk"
+    },
+    {
+      "block": 2,
+      "text": "Skip to main content"
+    },
+    {
+      "block": 3,
+      "text": "en"
+    },
+    {
+      "block": 4,
+      "text": "Select your language"
+    },
+    {
+      "block": 5,
+      "text": "Close"
+    },
+    {
+      "block": 6,
+      "text": "esEspañol"
+    },
+    {
+      "block": 7,
+      "text": "deDeutsch"
+    },
+    {
+      "block": 8,
+      "text": "enEnglish"
+    },
+    {
+      "block": 9,
+      "text": "frFrançais"
+    },
+    {
+      "block": 10,
+      "text": "itItaliano"
+    },
+    {
+      "block": 11,
+      "text": "plPolski"
+    },
+    {
+      "block": 12,
+      "text": "Search"
+    },
+    {
+      "block": 13,
+      "text": "Search"
+    },
+    {
+      "block": 14,
+      "text": "AI Act Service Desk"
+    },
+    {
+      "block": 15,
+      "text": "AI Act Explorer"
+    },
+    {
+      "block": 16,
+      "text": "Search the AI Act"
+    },
+    {
+      "block": 17,
+      "text": "Search"
+    },
+    {
+      "block": 18,
+      "text": "Recitals"
+    },
+    {
+      "block": 19,
+      "text": "123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180"
+    },
+    {
+      "block": 20,
+      "text": "Chapter I: General Provisions"
+    },
+    {
+      "block": 21,
+      "text": "Article 1: Subject matter'"
+    },
+    {
+      "block": 22,
+      "text": "Article 2: Scope"
+    },
+    {
+      "block": 23,
+      "text": "Article 3: Definitions"
+    },
+    {
+      "block": 24,
+      "text": "Article 4: AI literacy"
+    },
+    {
+      "block": 25,
+      "text": "Article 4a: Processing of special categories of personal data for bias detection and correction"
+    },
+    {
+      "block": 26,
+      "text": "Chapter II: Prohibited AI Practices"
+    },
+    {
+      "block": 27,
+      "text": "Article 5: Prohibited AI practices"
+    },
+    {
+      "block": 28,
+      "text": "Chapter III: High-Risk AI Systems"
+    },
+    {
+      "block": 29,
+      "text": "Section 1: Classification of AI Systems as High-Risk"
+    },
+    {
+      "block": 30,
+      "text": "Article 6: Classification rules for high-risk AI systems"
+    },
+    {
+      "block": 31,
+      "text": "Article 7: Amendments to Annex III"
+    },
+    {
+      "block": 32,
+      "text": "Section 2: Requirements for High-Risk AI Systems"
+    },
+    {
+      "block": 33,
+      "text": "Article 8: Compliance with the requirements"
+    },
+    {
+      "block": 34,
+      "text": "Article 9: Risk management system"
+    },
+    {
+      "block": 35,
+      "text": "Article 10: Data and data governance"
+    },
+    {
+      "block": 36,
+      "text": "Article 11: Technical documentation"
+    },
+    {
+      "block": 37,
+      "text": "Article 12: Record-keeping"
+    },
+    {
+      "block": 38,
+      "text": "Article 13: Transparency and provision of information to deployers"
+    },
+    {
+      "block": 39,
+      "text": "Article 14: Human oversight"
+    },
+    {
+      "block": 40,
+      "text": "Article 15: Accuracy, robustness and cybersecurity"
+    },
+    {
+      "block": 41,
+      "text": "Section 3: Obligations of Providers and Deployers of High-Risk AI Systems and Other Parties"
+    },
+    {
+      "block": 42,
+      "text": "Article 16: Obligations of providers of high-risk AI systems"
+    },
+    {
+      "block": 43,
+      "text": "Article 17: Quality management system"
+    },
+    {
+      "block": 44,
+      "text": "Article 18: Documentation keeping"
+    },
+    {
+      "block": 45,
+      "text": "Article 19: Automatically generated logs"
+    },
+    {
+      "block": 46,
+      "text": "Article 20: Corrective actions and duty of information"
+    },
+    {
+      "block": 47,
+      "text": "Article 21: Cooperation with competent authorities"
+    },
+    {
+      "block": 48,
+      "text": "Article 22: Authorised representatives of providers of high-risk AI systems"
+    },
+    {
+      "block": 49,
+      "text": "Article 23: Obligations of importers"
+    },
+    {
+      "block": 50,
+      "text": "Article 24: Obligations of distributors"
+    },
+    {
+      "block": 51,
+      "text": "Article 25: Responsibilities along the AI value chain"
+    },
+    {
+      "block": 52,
+      "text": "Article 26: Obligations of deployers of high-risk AI systems"
+    },
+    {
+      "block": 53,
+      "text": "Article 27: Fundamental rights impact assessment for high-risk AI systems"
+    },
+    {
+      "block": 54,
+      "text": "Section 4: Notifying Authorities and Notified Bodies"
+    },
+    {
+      "block": 55,
+      "text": "Article 28: Notifying authorities"
+    },
+    {
+      "block": 56,
+      "text": "Article 29: Application of a conformity assessment body for notification"
+    },
+    {
+      "block": 57,
+      "text": "Article 30: Notification procedure"
+    },
+    {
+      "block": 58,
+      "text": "Article 31: Requirements relating to notified bodies"
+    },
+    {
+      "block": 59,
+      "text": "Article 32: Presumption of conformity with requirements relating to notified bodies"
+    },
+    {
+      "block": 60,
+      "text": "Article 33: Subsidiaries of notified bodies and subcontracting"
+    },
+    {
+      "block": 61,
+      "text": "Article 34: Operational obligations of notified bodies"
+    },
+    {
+      "block": 62,
+      "text": "Article 35: Identification numbers and lists of notified bodies"
+    },
+    {
+      "block": 63,
+      "text": "Article 36: Changes to notifications"
+    },
+    {
+      "block": 64,
+      "text": "Article 37: Challenge to the competence of notified bodies"
+    },
+    {
+      "block": 65,
+      "text": "Article 38: Coordination of notified bodies"
+    },
+    {
+      "block": 66,
+      "text": "Article 39: Conformity assessment bodies of third countries"
+    },
+    {
+      "block": 67,
+      "text": "Section 5: Standards, Conformity Assessment, Certificates, Registration"
+    },
+    {
+      "block": 68,
+      "text": "Article 40: Harmonised standards and standardisation deliverables"
+    },
+    {
+      "block": 69,
+      "text": "Article 41: Common specifications"
+    },
+    {
+      "block": 70,
+      "text": "Article 42: Presumption of conformity with certain requirements"
+    },
+    {
+      "block": 71,
+      "text": "Article 43: Conformity assessment"
+    },
+    {
+      "block": 72,
+      "text": "Article 44: Certificates"
+    },
+    {
+      "block": 73,
+      "text": "Article 45: Information obligations of notified bodies"
+    },
+    {
+      "block": 74,
+      "text": "Article 46: Derogation from conformity assessment procedure"
+    },
+    {
+      "block": 75,
+      "text": "Article 47: EU declaration of conformity"
+    },
+    {
+      "block": 76,
+      "text": "Article 48: CE marking"
+    },
+    {
+      "block": 77,
+      "text": "Article 49: Registration"
+    },
+    {
+      "block": 78,
+      "text": "Chapter IV: Transparency Obligations for Providers and Deployers of Certain AI Systems"
+    },
+    {
+      "block": 79,
+      "text": "Article 50: Transparency obligations for providers and deployers of certain AI systems"
+    },
+    {
+      "block": 80,
+      "text": "Chapter V: General-Purpose AI Models"
+    },
+    {
+      "block": 81,
+      "text": "Section 1: Classification Rules"
+    },
+    {
+      "block": 82,
+      "text": "Article 51: Classification of general-purpose AI models as general-purpose AI models with systemic risk"
+    },
+    {
+      "block": 83,
+      "text": "Article 52: Procedure"
+    },
+    {
+      "block": 84,
+      "text": "Section 2: Obligations for Providers of General-Purpose AI Models"
+    },
+    {
+      "block": 85,
+      "text": "Article 53: Obligations for providers of general-purpose AI models"
+    },
+    {
+      "block": 86,
+      "text": "Article 54: Authorised representatives of providers of general-purpose AI models"
+    },
+    {
+      "block": 87,
+      "text": "Section 3: Obligations of Providers of General-Purpose AI Models with Systemic Risk"
+    },
+    {
+      "block": 88,
+      "text": "Article 55: Obligations of providers of general-purpose AI models with systemic risk"
+    },
+    {
+      "block": 89,
+      "text": "Section 4: Codes of Practice"
+    },
+    {
+      "block": 90,
+      "text": "Article 56: Codes of practice"
+    },
+    {
+      "block": 91,
+      "text": "Chapter VI: Measures in Support of Innovation"
+    },
+    {
+      "block": 92,
+      "text": "Article 57: AI regulatory sandboxes"
+    },
+    {
+      "block": 93,
+      "text": "Article 58: Detailed arrangements for, and functioning of, AI regulatory sandboxes"
+    },
+    {
+      "block": 94,
+      "text": "Article 59: Further processing of personal data for developing certain AI systems in the public interest in the AI regulatory sandbox"
+    },
+    {
+      "block": 95,
+      "text": "Article 60: Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes"
+    },
+    {
+      "block": 96,
+      "text": "Article 60a: Testing of high-risk AI systems covered by Union harmonisation legislation listed in Section B of Annex I in real-world conditions outside AI regulatory sandboxes"
+    },
+    {
+      "block": 97,
+      "text": "Article 61: Informed consent to participate in testing in real world conditions outside AI regulatory sandboxes"
+    },
+    {
+      "block": 98,
+      "text": "Article 62: Measures for providers and deployers, in particular SMEs, including start-ups"
+    },
+    {
+      "block": 99,
+      "text": "Article 63: Derogations for specific operators"
+    },
+    {
+      "block": 100,
+      "text": "Chapter VII: Governance"
+    },
+    {
+      "block": 101,
+      "text": "Section 1: Governance at Union Level"
+    },
+    {
+      "block": 102,
+      "text": "Article 64: AI Office"
+    },
+    {
+      "block": 103,
+      "text": "Article 65: Establishment and structure of the European Artificial Intelligence Board"
+    },
+    {
+      "block": 104,
+      "text": "Article 66: Tasks of the Board"
+    },
+    {
+      "block": 105,
+      "text": "Article 67: Advisory forum"
+    },
+    {
+      "block": 106,
+      "text": "Article 68: Scientific panel of independent experts"
+    },
+    {
+      "block": 107,
+      "text": "Article 69: Access to the pool of experts by the Member States"
+    },
+    {
+      "block": 108,
+      "text": "Section 2: National competent authorities"
+    },
+    {
+      "block": 109,
+      "text": "Article 70: Designation of national competent authorities and single points of contact"
+    },
+    {
+      "block": 110,
+      "text": "Chapter VIII: EU Database for High-Risk AI Systems"
+    },
+    {
+      "block": 111,
+      "text": "Article 71: EU database for high-risk AI systems listed in Annex III"
+    },
+    {
+      "block": 112,
+      "text": "Chapter IX: Post-Market Monitoring, Information Sharing and Market Surveillance"
+    },
+    {
+      "block": 113,
+      "text": "Section 1: Post-Market Monitoring"
+    },
+    {
+      "block": 114,
+      "text": "Article 72: Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems"
+    },
+    {
+      "block": 115,
+      "text": "Section 2: Sharing of Information on Serious Incidents"
+    },
+    {
+      "block": 116,
+      "text": "Article 73: Reporting of serious incidents"
+    },
+    {
+      "block": 117,
+      "text": "Section 3: Enforcement"
+    },
+    {
+      "block": 118,
+      "text": "Article 74: Market surveillance and control of AI systems in the Union market"
+    },
+    {
+      "block": 119,
+      "text": "Article 75: Market surveillance and control of AI systems and mutual assistance"
+    },
+    {
+      "block": 120,
+      "text": "Article 75a: Supervisory and enforcement powers of the AI Office"
+    },
+    {
+      "block": 121,
+      "text": "Article 75b: Commitments"
+    },
+    {
+      "block": 122,
+      "text": "Article 75c: Non-compliance, fines and periodic penalty payments"
+    },
+    {
+      "block": 123,
+      "text": "Article 75d: Safeguards and further specification"
+    },
+    {
+      "block": 124,
+      "text": "Article 76: Supervision of testing in real world conditions by market surveillance authorities"
+    },
+    {
+      "block": 125,
+      "text": "Article 77: Powers of authorities protecting fundamental rights and cooperation with market surveillance authorities"
+    },
+    {
+      "block": 126,
+      "text": "Article 78: Confidentiality"
+    },
+    {
+      "block": 127,
+      "text": "Article 79: Procedure at national level for dealing with AI systems presenting a risk"
+    },
+    {
+      "block": 128,
+      "text": "Article 80: Procedure for dealing with AI systems classified by the provider as non-high-risk in application of Annex III"
+    },
+    {
+      "block": 129,
+      "text": "Article 81: Union safeguard procedure"
+    },
+    {
+      "block": 130,
+      "text": "Article 82: Compliant AI systems which present a risk"
+    },
+    {
+      "block": 131,
+      "text": "Article 83: Formal non-compliance"
+    },
+    {
+      "block": 132,
+      "text": "Article 84: Union AI testing support structures"
+    },
+    {
+      "block": 133,
+      "text": "Section 4: Remedies"
+    },
+    {
+      "block": 134,
+      "text": "Article 85: Right to lodge a complaint with a market surveillance authority"
+    },
+    {
+      "block": 135,
+      "text": "Article 86: Right to explanation of individual decision-making"
+    },
+    {
+      "block": 136,
+      "text": "Article 87: Reporting of infringements and protection of reporting persons"
+    },
+    {
+      "block": 137,
+      "text": "Section 5: Supervision, Investigation, Enforcement and Monitoring in Respect of Providers of General-Purpose AI Models"
+    },
+    {
+      "block": 138,
+      "text": "Article 88: Enforcement of the obligations of providers of general-purpose AI models"
+    },
+    {
+      "block": 139,
+      "text": "Article 89: Monitoring actions"
+    },
+    {
+      "block": 140,
+      "text": "Article 90: Alerts of systemic risks by the scientific panel"
+    },
+    {
+      "block": 141,
+      "text": "Article 91: Power to request documentation and information"
+    },
+    {
+      "block": 142,
+      "text": "Article 92: Power to conduct evaluations"
+    },
+    {
+      "block": 143,
+      "text": "Article 93: Power to request measures"
+    },
+    {
+      "block": 144,
+      "text": "Article 94: Procedural rights of economic operators of the general-purpose AI model"
+    },
+    {
+      "block": 145,
+      "text": "Chapter X: Codes of Conduct and Guidelines"
+    },
+    {
+      "block": 146,
+      "text": "Article 95: Codes of conduct for voluntary application of specific requirements"
+    },
+    {
+      "block": 147,
+      "text": "Article 96: Guidelines from the Commission on the implementation of this Regulation"
+    },
+    {
+      "block": 148,
+      "text": "Chapter XI: Delegation of Power and Committee Procedure"
+    },
+    {
+      "block": 149,
+      "text": "Article 97: Exercise of the delegation"
+    },
+    {
+      "block": 150,
+      "text": "Article 98: Committee procedure"
+    },
+    {
+      "block": 151,
+      "text": "Chapter XII: Penalties"
+    },
+    {
+      "block": 152,
+      "text": "Article 99: Penalties"
+    },
+    {
+      "block": 153,
+      "text": "Article 100: Administrative fines on Union institutions, bodies, offices and agencies"
+    },
+    {
+      "block": 154,
+      "text": "Article 101: Fines for providers of general-purpose AI models"
+    },
+    {
+      "block": 155,
+      "text": "Chapter XIII: Final Provisions"
+    },
+    {
+      "block": 156,
+      "text": "Article 102: Amendment to Regulation (EC) No 300/2008"
+    },
+    {
+      "block": 157,
+      "text": "Article 103: Amendment to Regulation (EU) No 167/2013"
+    },
+    {
+      "block": 158,
+      "text": "Article 104: Amendment to Regulation (EU) No 168/2013"
+    },
+    {
+      "block": 159,
+      "text": "Article 105: Amendment to Directive 2014/90/EU"
+    },
+    {
+      "block": 160,
+      "text": "Article 106: Amendment to Directive (EU) 2016/797"
+    },
+    {
+      "block": 161,
+      "text": "Article 107: Amendment to Regulation (EU) 2018/858"
+    },
+    {
+      "block": 162,
+      "text": "Article 108: Amendments to Regulation (EU) 2018/1139"
+    },
+    {
+      "block": 163,
+      "text": "Article 109: Amendment to Regulation (EU) 2019/2144"
+    },
+    {
+      "block": 164,
+      "text": "Article 110: Amendment to Directive (EU) 2020/1828"
+    },
+    {
+      "block": 165,
+      "text": "Article 111: AI systems already placed on the market or put into service and general-purpose AI models already placed on the marked"
+    },
+    {
+      "block": 166,
+      "text": "Article 112: Evaluation and review"
+    },
+    {
+      "block": 167,
+      "text": "Article 113: Entry into force and application"
+    },
+    {
+      "block": 168,
+      "text": "Annexes"
+    },
+    {
+      "block": 169,
+      "text": "ANNEX I"
+    },
+    {
+      "block": 170,
+      "text": "ANNEX II"
+    },
+    {
+      "block": 171,
+      "text": "ANNEX III"
+    },
+    {
+      "block": 172,
+      "text": "ANNEX IV"
+    },
+    {
+      "block": 173,
+      "text": "ANNEX V"
+    },
+    {
+      "block": 174,
+      "text": "ANNEX VI"
+    },
+    {
+      "block": 175,
+      "text": "ANNEX VII"
+    },
+    {
+      "block": 176,
+      "text": "ANNEX VIII"
+    },
+    {
+      "block": 177,
+      "text": "ANNEX IX"
+    },
+    {
+      "block": 178,
+      "text": "ANNEX X"
+    },
+    {
+      "block": 179,
+      "text": "ANNEX XI"
+    },
+    {
+      "block": 180,
+      "text": "ANNEX XII"
+    },
+    {
+      "block": 181,
+      "text": "ANNEX XIII"
+    },
+    {
+      "block": 182,
+      "text": "ANNEX XIV"
+    },
+    {
+      "block": 183,
+      "text": "Digital Omnibus Disclaimer"
+    },
+    {
+      "block": 184,
+      "text": "About this text:"
+    },
+    {
+      "block": 185,
+      "text": "The text displayed here is based on the EUR-Lex consolidated version of the AI Act as at 27 July 2026. Where shown, “NEW” and “AMENDED” identify passages containing additions or amendments to the original AI Act made by the Digital Omnibus on AI. For more information, refer to the FAQ section under 'Digital Omnibus'."
+    },
+    {
+      "block": 186,
+      "text": "Chapter IV: Transparency Obligations for Providers and Deployers of Certain AI Systems"
+    },
+    {
+      "block": 187,
+      "text": "Article 50: Transparency obligations for providers and deployers of certain AI systems"
+    },
+    {
+      "block": 188,
+      "text": "Summary"
+    },
+    {
+      "block": 189,
+      "text": "Providers must inform users when they are interacting directly with an AI system. AI-generated or -manipulated content must be clearly marked and detectable as artificially generated. Deployers of emotion recognition or biometric categorisation systems must inform exposed person about the operation of the system. Deepfakes and AI-generated text must be disclosed as artificially generated. An exemption from these transparency obligations applies in case the systems are authorised by law to detect, prevent, investigate or prosecute criminal offences. Other specific exceptions apply per transparency obligation. Information must be provided clearly, distinguishably and accessibly."
+    },
+    {
+      "block": 190,
+      "text": "The summaries are meant to provide helpful explanation but are not legal binding."
+    },
+    {
+      "block": 191,
+      "text": "1. Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence."
+    },
+    {
+      "block": 192,
+      "text": "2. Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences."
+    },
+    {
+      "block": 193,
+      "text": "3. Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law."
+    },
+    {
+      "block": 194,
+      "text": "4. Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work."
+    },
+    {
+      "block": 195,
+      "text": "Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content."
+    },
+    {
+      "block": 196,
+      "text": "5. The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+    },
+    {
+      "block": 197,
+      "text": "6. Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems."
+    },
+    {
+      "block": 198,
+      "text": "AMENDED"
+    },
+    {
+      "block": 199,
+      "text": "7. The Commission shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection, marking and labelling of artificially generated or manipulated content. The Commission, taking utmost account of the opinion of the Board, shall assess whether adherence to those codes of practice is adequate to ensure compliance with the obligations laid down in paragraphs 2 and 4 of this Article, in accordance with the procedure laid down in Article 56(6). If it deems the code of practice to be inadequate, the Commission may adopt an implementing act specifying common rules for the implementation of those obligations in accordance with the examination procedure laid down in Article 98(2)."
+    },
+    {
+      "block": 200,
+      "text": "Relevant recitals"
+    },
+    {
+      "block": 201,
+      "text": "Recital 132"
+    },
+    {
+      "block": 202,
+      "text": "Recital 133"
+    },
+    {
+      "block": 203,
+      "text": "Recital 134"
+    },
+    {
+      "block": 204,
+      "text": "Recital 136"
+    },
+    {
+      "block": 205,
+      "text": "Recital 137"
+    }
+  ]
+}
