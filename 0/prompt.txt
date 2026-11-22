@@ -1,0 +1,172 @@
+I do not see my changes on github, verify the repository that was commited to
+
+---
+
+verify that the changes committed locally are to my personal fork of the repository and push those changes to github
+
+---
+
+Review the current project and prepare an implementation plan before making any implementation changes.
+
+First, inspect the repository structure, relevant documentation, requirements, and existing code. Follow `AGENTS.md` and any applicable project-level instructions.
+
+## Objectives
+
+1. **Understand the project:** Identify its purpose, requirements, constraints, existing implementation, and expected deliverables.
+2. **Assess the current state:** Determine what is already implemented, what remains incomplete, and whether existing components can be reused.
+3. **Identify uncertainties:** Highlight missing requirements, ambiguities, dependencies, or technical risks. Do not invent missing information.
+4. **Propose an approach:** Recommend the simplest maintainable solution that satisfies the requirements. Prefer existing tools and conventions over unnecessary complexity.
+5. **Develop an implementation roadmap:** Divide the work into small, logically ordered stages with clear deliverables, dependencies, and acceptance criteria.
+6. **Define verification:** Identify the focused tests or checks needed to establish correctness at each stage.
+7. **Plan delegation:** Identify tasks appropriate for lower-cost subagents and those requiring primary-agent oversight. Follow the repository's delegation policy and model configuration.
+
+## Plan documentation
+
+Create or update `PLAN.md` in the repository root as the persistent implementation plan.
+
+Organize it into the following sections:
+
+- Project overview and objectives
+- Current implementation status
+- Requirements and constraints
+- Proposed architecture and technical decisions
+- Incremental implementation roadmap
+- Acceptance criteria and verification strategy
+- Delegation recommendations
+- Known risks, assumptions, and unresolved questions
+- Progress tracking
+
+Each implementation stage should include its objective, scope, expected deliverables, verification steps, and completion status.
+
+If `PLAN.md` already exists, reconcile it with the current project state rather than blindly overwriting it. Preserve relevant decisions and completed work.
+
+Mark the plan as **Proposed** until I explicitly approve it.
+
+## Working principles
+
+- Minimize unnecessary context loading and token consumption.
+- Favor incremental, independently verifiable changes.
+- Avoid redundant analysis, excessive delegation, and premature optimization.
+- Distinguish confirmed requirements from assumptions and recommendations.
+- Keep documentation concise but sufficiently detailed to guide future agents.
+- During planning, only create or modify `PLAN.md`. Do not change implementation files, tests, configurations, or other project artifacts.
+
+## Expected result
+
+Save the proposed plan to `PLAN.md` and provide a concise summary of:
+
+1. Recommended implementation approach.
+2. Planned stages and dependencies.
+3. Important technical decisions and risks.
+4. Proposed delegation strategy.
+5. Questions requiring clarification.
+
+**Do not begin implementation until I explicitly approve the plan.**
+
+---
+
+Are there any additional clarifications you need from the compliance and operations manager? Or any other information you need me to provide from the files you could not access?
+
+---
+
+The README file points to the same information copied into REQUIREMENTS.md, only note it has is about the snapshot.schema.json file, which says its purpose is "Public snapshot contract; keep it unchanged." The interview file currently included in the interviews folder is the only interview export conducted thus far.
+
+---
+
+Are there any portions of your currently proposed plan that are operating under assumptions? I can provide clarification if so.
+
+---
+
+I have uploaded an updated interview that contains the information that you asked for clarification on. Let me know if there are any additional clarifications needed after reviewing it.
+
+---
+
+I've uploaded an updated interview asking specifically about the system IDs. Does this provide sufficient clarification on that issue?
+
+---
+
+plan should also include that the interview files are updated.
+
+---
+
+Update the plan to mention providing me with tests that I can run to confirm the completion of the specific project stage.
+
+---
+
+The implementation plan in `PLAN.md` is approved.
+
+Begin with the next incomplete stage, following `AGENTS.md` and the repository's cost-aware delegation policy.
+
+Implement the smallest maintainable solution, run the relevant verification steps, and update `PLAN.md` to reflect completed work, decisions, and any new blockers.
+
+Stop after completing the stage and provide a concise summary for review before proceeding.
+
+---
+
+I followed the one-time environment setup and chose broad for the scope. after running the test command, all 6 tests returned ok. here is the output of the important setup and test commands:
+
+chris@LAPTOP-RI1TAHF7:~/regulatory-compliance$ python3 -m venv .venv
+chris@LAPTOP-RI1TAHF7:~/regulatory-compliance$ .venv/bin/python -m pip install 'jsonschema[format]>=4.18,<5'
+Collecting jsonschema[format]<5,>=4.18
+  Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 KB 1.9 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Collecting attrs>=22.2.0
+  Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 KB 4.9 MB/s eta 0:00:00
+Collecting rpds-py>=0.25.0
+  Downloading rpds_py-0.30.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (390 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 390.5/390.5 KB 7.8 MB/s eta 0:00:00
+Collecting isoduration
+  Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+Collecting idna
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 KB 6.4 MB/s eta 0:00:00
+Collecting rfc3987
+  Downloading rfc3987-1.3.8-py2.py3-none-any.whl (13 kB)
+Collecting webcolors>=1.11
+  Downloading webcolors-25.10.0-py3-none-any.whl (14 kB)
+Collecting uri-template
+  Downloading uri_template-1.3.0-py3-none-any.whl (11 kB)
+Collecting fqdn
+  Downloading fqdn-1.6.0-py3-none-any.whl (12 kB)
+Collecting jsonpointer>1.13
+  Downloading jsonpointer-3.12-py3-none-any.whl (10 kB)
+Collecting rfc3339-validator
+  Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Collecting typing-extensions>=4.4.0
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting arrow>=0.15.0
+  Downloading arrow-1.4.0-py3-none-any.whl (68 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 KB 7.5 MB/s eta 0:00:00
+Collecting six
+  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting tzdata
+  Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.2/348.2 KB 23.6 MB/s eta 0:00:00
+Collecting python-dateutil>=2.7.0
+  Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.7/94.7 KB 9.8 MB/s eta 0:00:00
+Installing collected packages: rfc3987, webcolors, uri-template, tzdata, typing-extensions, six, rpds-py, jsonpointer, idna, fqdn, attrs, rfc3339-validator, referencing, python-dateutil, jsonschema-specifications, arrow, jsonschema, isoduration
+Successfully installed arrow-1.4.0 attrs-26.1.0 fqdn-1.6.0 idna-3.20 isoduration-20.11.0 jsonpointer-3.12 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 python-dateutil-3.0.0 referencing-0.37.0 rfc3339-validator-0.1.4 rfc3987-1.3.8 rpds-py-0.30.0 six-1.17.0 typing-extensions-4.16.0 tzdata-2026.6 uri-template-1.3.0 webcolors-25.10.0
+chris@LAPTOP-RI1TAHF7:~/regulatory-compliance$ .venv/bin/python regulatory-change-impact-brief/scripts/run.py --routes regulatory-change-impact-brief/references/routes.json --broad
+Scope complete: deliverables/snapshots/01-scope.json
+chris@LAPTOP-RI1TAHF7:~/regulatory-compliance$ .venv/bin/python -B tests/test_stage_a.py -v
+test_access_failure (__main__.ScopeTests) ... ok
+test_ambiguous_register (__main__.ScopeTests) ... ok
+test_broad_retry (__main__.ScopeTests) ... ok
+test_focused (__main__.ScopeTests) ... ok
+test_missing_id (__main__.ScopeTests) ... ok
+test_required_inputs (__main__.ScopeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.018s
+
+OK
+
+---
+
+Commit the changes for stage A and proceed to stage B

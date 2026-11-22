@@ -1,0 +1,54 @@
+{
+  "cli_version": "0.13.4",
+  "checkpoint_id": "01M82FQZMVEE43RXT76H8N3VJ8",
+  "session_id": "01a204ad-d8c4-7dd3-a002-06459c91278d",
+  "strategy": "manual-commit",
+  "created_at": "2026-11-22T20:39:14.088269548Z",
+  "branch": "main",
+  "checkpoints_count": 13,
+  "save_step_count": 8,
+  "files_touched": [
+    "PLAN.md",
+    "regulatory-change-impact-brief/SKILL.md",
+    "regulatory-change-impact-brief/references/routes.json",
+    "regulatory-change-impact-brief/scripts/run.py",
+    "tests/test_stage_a.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6.2-astra",
+  "turn_id": "c5dd59b47a63",
+  "checkpoint_transcript_start": 74,
+  "transcript_lines_at_start": 74,
+  "compact_transcript_start": 12,
+  "token_usage": {
+    "input_tokens": 112791,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 3443072,
+    "output_tokens": 16187,
+    "api_call_count": 57
+  },
+  "session_token_usage": {
+    "input_tokens": 124809,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 3555584,
+    "output_tokens": 17373,
+    "api_call_count": 63
+  },
+  "redaction": {
+    "replacements": 59,
+    "layers": {
+      "betterleaks": 0,
+      "connection_string": 0,
+      "credential_key": 0,
+      "credential_value": 0,
+      "credentialed_uri": 0,
+      "entropy": 59,
+      "key_context": 0,
+      "provider_token": 0,
+      "shell_stdin": 0
+    }
+  },
+  "session_metrics": {
+    "turn_count": 13
+  }
+}
