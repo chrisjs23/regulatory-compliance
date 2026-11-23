@@ -1,0 +1,81 @@
+I was reading how we can use notion's internal API to access the site content using the 32 character ID. Would that be a route we could try for that POLICY issue?
+
+---
+
+This is the ttest script I found to try what I was talking about:
+
+python3 -c '
+import requests
+raw = "YOUR_32_CHAR_ID"
+uid = f"{raw[:8]}-{raw[8:12]}-{raw[12:16]}-{raw[16:20]}-{raw[20:]}"
+r = requests.post("https://notion.so", json={"pageId": uid, "limit": 50, "cursor": {"stack": []}, "chunkNumber": 0, "verticalColumns": False}).json()
+print("Blocks found:", len(r.get("recordMap", {}).get("block", {})))
+'
+
+---
+
+Can you explain the issue again, using plain terms?
+
+---
+
+no I mean the read access issue overall
+
+---
+
+are there any additional automatic read-only methods that we can try?
+
+---
+
+let's try using playwright to capture the text from the notion page.
+
+---
+
+Proceed with that diagnostic
+
+---
+
+There should be no collapsed sections within the page. Are you using this URL: https://private-pecorino-70e.notion.site/REDACTED#5bcbdfef18004bcf8cd2d6f32125c9ff
+
+---
+
+Show me what text playwright ends up seeing under the AI-001 heading.
+
+---
+
+Does trying the original method (not using playwright) with the exact link change the 403 result?
+
+---
+
+So the playwright method is not able to capture the full text of the page?
+
+---
+
+lazy loading could be causing the page to not load the entire text content upon opening it. Can we force it to load the full content by scrolling to the bottom of the page?
+
+---
+
+Let's step back to stage B and verify this new method before proceeding further.
+
+---
+
+Provide me with the instructions to run the stage b tests manually
+
+---
+
+No errors reported for the tests. What is causing the rate limit?
+
+---
+
+Let's move on to stage C, using the updated stage B
+
+---
+
+Tests have been manually verified. Let's move on to the next stage.
+
+---
+
+Tests have been manually verified. Let's proceed to the next stage
+
+---
+
+Tests have been manually verified. Let's proceed to the next stage

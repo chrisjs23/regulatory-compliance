@@ -1,0 +1,76 @@
+{
+  "cli_version": "0.13.4",
+  "checkpoint_id": "01M82VHGRCZ2JKNQVCPK95NE6K",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 19,
+  "files_touched": [
+    ".gitignore",
+    "PLAN.md",
+    "deliverables/action-calendar.ics",
+    "deliverables/compliance-brief.md",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/snapshots/01-scope.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/snapshots/02-source-capture.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/amend.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/calendar.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/consolidated.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/evidence.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/faq.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/law.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/oj.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/systems.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/capture/time.json",
+    "deliverables/history/7c205f14-85b1-4d1d-8522-eab941f05ea3/sources/systems-scope.json",
+    "deliverables/impact-register.csv",
+    "deliverables/snapshots/01-scope.json",
+    "deliverables/snapshots/02-source-capture.json",
+    "deliverables/snapshots/03-authority-and-timing.json",
+    "deliverables/snapshots/04-evidence-reconciliation.json",
+    "deliverables/snapshots/05-impact-analysis.json",
+    "deliverables/snapshots/06-actions-and-approvals.json",
+    "deliverables/snapshots/07-publication-validation.json",
+    "regulatory-change-impact-brief/SKILL.md",
+    "regulatory-change-impact-brief/references/reviewed-authority.json",
+    "regulatory-change-impact-brief/scripts/analyze.py",
+    "regulatory-change-impact-brief/scripts/full_run.py",
+    "regulatory-change-impact-brief/scripts/publish.py",
+    "regulatory-change-impact-brief/scripts/reconcile.py",
+    "review-runs/playwright-probe/20261122T225337Z.json",
+    "review-runs/playwright-probe/verification-20261122T225615Z.json",
+    "tests/test_stage_c.py",
+    "tests/test_stage_d.py",
+    "tests/test_stage_e.py",
+    "tests/test_stage_f.py",
+    "tests/verify_policy_scroll.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 640460,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 28839296,
+    "output_tokens": 92065,
+    "api_call_count": 193
+  },
+  "redaction": {
+    "replacements": 128,
+    "layers": {
+      "betterleaks": 0,
+      "connection_string": 0,
+      "credential_key": 0,
+      "credential_value": 0,
+      "credentialed_uri": 0,
+      "entropy": 132,
+      "key_context": 0,
+      "provider_token": 0,
+      "shell_stdin": 0
+    }
+  }
+}
