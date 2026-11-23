@@ -1,0 +1,88 @@
+{
+  "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856#5bcbdfef18004bcf8cd2d6f32125c9ff",
+  "trials": [
+    {
+      "started_at": "2026-11-22T22:55:53.719496+00:00",
+      "matches": {
+        "AI-001": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "scroll",
+          "observed_sha256": "be8a617ca433cff4aaf60e3387625e5e144892daa87bc26075a27315afa1da7d"
+        },
+        "Internal AI-use policy": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "initial",
+          "observed_sha256": "5bb5593b4e83049ef9d3d34ca5d935a9cb531d6b54e8b8ef8a5d72b9a65de680"
+        },
+        "Article 50 review - company operating facts": {
+          "heading": false,
+          "passage": true,
+          "paired": false,
+          "first_seen": "scroll",
+          "observed_sha256": "fe724988884c63f005a4126e5f4266037c69bff913b70a7e80a46073ffd7f014"
+        },
+        "Product timing and evidence limits": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "scroll",
+          "observed_sha256": "87f0d2a8ad6e414b979bfc5f8fbc9cf03e077bcc6cdc8f8b792c446f6491e7b5"
+        }
+      },
+      "browser_version": "159.0.8154.6",
+      "reached_bottom": true,
+      "passed": false,
+      "document_status": 200,
+      "scroll_positions": 8,
+      "http_errors": {
+        "403": 1
+      }
+    },
+    {
+      "started_at": "2026-11-22T22:56:04.687970+00:00",
+      "matches": {
+        "AI-001": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "scroll",
+          "observed_sha256": "be8a617ca433cff4aaf60e3387625e5e144892daa87bc26075a27315afa1da7d"
+        },
+        "Internal AI-use policy": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "initial",
+          "observed_sha256": "5bb5593b4e83049ef9d3d34ca5d935a9cb531d6b54e8b8ef8a5d72b9a65de680"
+        },
+        "Article 50 review - company operating facts": {
+          "heading": false,
+          "passage": true,
+          "paired": false,
+          "first_seen": "scroll",
+          "observed_sha256": "fe724988884c63f005a4126e5f4266037c69bff913b70a7e80a46073ffd7f014"
+        },
+        "Product timing and evidence limits": {
+          "heading": true,
+          "passage": true,
+          "paired": true,
+          "first_seen": "scroll",
+          "observed_sha256": "87f0d2a8ad6e414b979bfc5f8fbc9cf03e077bcc6cdc8f8b792c446f6491e7b5"
+        }
+      },
+      "browser_version": "159.0.8154.6",
+      "reached_bottom": true,
+      "passed": false,
+      "document_status": 200,
+      "scroll_positions": 8,
+      "http_errors": {
+        "429": 1944
+      }
+    }
+  ],
+  "comparison": "Case-sensitive passage match after whitespace normalization; case-insensitive immediately preceding heading."
+}

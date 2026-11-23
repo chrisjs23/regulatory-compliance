@@ -1,0 +1,214 @@
+{
+  "editions": {
+    "oj": "sha256:428c54d36a0c24f9aac870c36bec34dab8d6a9b4b9f8639b3439d596d7326dd5",
+    "amend": "sha256:068fc1cea6e34cd7d114b4d9da545f1b1e481f1ce399b78daf75e3d1d0b3cbbd",
+    "consolidated": "sha256:5c1fd85ad739f4ca1459f62b3d3ce6a6bdc1f9e0b2bbbef4749e161674bb9510",
+    "faq": "sha256:ee4c68f332ee2d754a1dc833c2acf3c45e3b7093121940cbd7a840b05ba75cdd",
+    "time": "sha256:2310fcd37f73f84799cb81137bdf5d7915f8294c3b34de8935d887f34ba6bd36",
+    "law": "sha256:53e13883cbfaa441cbfd9d2dbb5551ef9861dab4e9d46db4201df748cae51677"
+  },
+  "claims": [
+    {
+      "id": "art50-1",
+      "summary": "Provider: direct interaction, obviousness and law-enforcement conditions",
+      "blocks": {
+        "oj": [
+          1471
+        ],
+        "consolidated": [
+          1430
+        ]
+      }
+    },
+    {
+      "id": "art50-2",
+      "summary": "Provider: machine-readable marking, technical feasibility and exclusions",
+      "blocks": {
+        "oj": [
+          1472
+        ],
+        "consolidated": [
+          1432
+        ]
+      }
+    },
+    {
+      "id": "art50-3",
+      "summary": "Deployer: emotion recognition or biometric categorisation and notice",
+      "blocks": {
+        "oj": [
+          1473
+        ],
+        "consolidated": [
+          1434
+        ]
+      }
+    },
+    {
+      "id": "art50-4-media",
+      "summary": "Deployer: disclosure of deepfakes and qualified artistic uses",
+      "blocks": {
+        "oj": [
+          1474
+        ],
+        "consolidated": [
+          1436
+        ]
+      }
+    },
+    {
+      "id": "art50-4-text",
+      "summary": "Deployer: public-interest text, editorial responsibility and exceptions",
+      "blocks": {
+        "oj": [
+          1475
+        ],
+        "consolidated": [
+          1437
+        ]
+      }
+    },
+    {
+      "id": "art50-5",
+      "summary": "Timing, clarity and accessibility of notice",
+      "blocks": {
+        "oj": [
+          1476
+        ],
+        "consolidated": [
+          1439
+        ]
+      }
+    },
+    {
+      "id": "art50-6",
+      "summary": "Other transparency obligations remain applicable",
+      "blocks": {
+        "oj": [
+          1477
+        ],
+        "consolidated": [
+          1441
+        ]
+      }
+    },
+    {
+      "id": "art50-7",
+      "summary": "Amended paragraph 7 assigns the Commission the codes-of-practice function.",
+      "blocks": {
+        "oj": [
+          1478
+        ],
+        "amend": [
+          490,
+          491,
+          492
+        ],
+        "consolidated": [
+          1444
+        ]
+      }
+    },
+    {
+      "id": "amend-entry",
+      "summary": "Amendment published 24 July 2026 and effective on the third following day, 27 July.",
+      "blocks": {
+        "amend": [
+          188,
+          189,
+          190,
+          945
+        ],
+        "consolidated": [
+          160,
+          161
+        ]
+      },
+      "publication_date": "2026-07-24",
+      "entry_into_force": "2026-07-27"
+    },
+    {
+      "id": "art113",
+      "summary": "General application from 2 August 2026. Consult the article-specific exceptions.",
+      "blocks": {
+        "oj": [
+          2380
+        ],
+        "amend": [
+          794,
+          795,
+          796,
+          797,
+          798,
+          799,
+          800,
+          801,
+          802,
+          803,
+          804,
+          805,
+          806,
+          807,
+          808
+        ],
+        "consolidated": [
+          2869
+        ]
+      },
+      "general_application_date": "2026-08-02"
+    },
+    {
+      "id": "art111-4",
+      "summary": "For providers of qualifying generative systems placed on the market before 2 August 2026, the Article 50(2) marking deadline is 2 December 2026. Assess deployer disclosure separately.",
+      "blocks": {
+        "amend": [
+          784,
+          790,
+          791
+        ],
+        "consolidated": [
+          2816
+        ]
+      },
+      "market_entry_before": "2026-08-02",
+      "compliance_by": "2026-12-02",
+      "role": "provider",
+      "limited_to": "Article 50(2)"
+    },
+    {
+      "id": "law-context",
+      "summary": "Service Desk currency warning; OJ acts control.",
+      "blocks": {
+        "law": [
+          183,
+          185
+        ]
+      }
+    },
+    {
+      "id": "faq-context",
+      "summary": "Commission explanation of the provider-only marking transition.",
+      "blocks": {
+        "faq": [
+          113,
+          118,
+          119
+        ]
+      }
+    },
+    {
+      "id": "time-context",
+      "summary": "Timeline guidance; capture did not establish the page revision for the review date.",
+      "blocks": {
+        "time": [
+          26,
+          28,
+          31,
+          32,
+          34,
+          41
+        ]
+      }
+    }
+  ]
+}

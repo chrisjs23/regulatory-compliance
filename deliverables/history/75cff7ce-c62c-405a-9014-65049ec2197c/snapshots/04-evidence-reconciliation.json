@@ -1,0 +1,1106 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+  "snapshot_id": "d1a45687-f89e-4d93-b683-d3a396ed99e0",
+  "sequence": 4,
+  "stage": "evidence-reconciliation",
+  "created_at": "2026-11-22T21:50:11.519933+00:00",
+  "status": "partial",
+  "predecessor": {
+    "path": "snapshots/03-authority-and-timing.json",
+    "snapshot_id": "b0d2ea08-d586-491d-b871-4cbcf02193a1",
+    "sha256": "sha256:aea26d41b938232494bc458c6bdcdfd513fc4133eb6380f4f1a8006cf52596e4"
+  },
+  "consumed_record_ids": [
+    "amend-entry",
+    "art111-4",
+    "art113",
+    "art50-1",
+    "art50-2",
+    "art50-3",
+    "art50-4-media",
+    "art50-4-text",
+    "art50-5",
+    "art50-6",
+    "art50-7",
+    "authority-basis",
+    "faq-context",
+    "gap-source-policy",
+    "gap-source-policy-browser-1",
+    "gap-source-policy-browser-2",
+    "gap-source-time",
+    "law-context",
+    "scope-selection",
+    "source-calendar",
+    "source-evidence",
+    "source-policy",
+    "source-policy-browser-1",
+    "source-policy-browser-2",
+    "source-systems",
+    "time-context"
+  ],
+  "produced_record_ids": [
+    "systems-AI-001",
+    "systems-AI-002",
+    "systems-AI-003",
+    "systems-AI-004",
+    "systems-AI-005",
+    "systems-AI-006",
+    "systems-AI-007",
+    "systems-AI-008",
+    "passage-source-policy-browser-1",
+    "passage-supplement-07f4c918a00c8919",
+    "passage-supplement-744e2c04498c2a36",
+    "market-entry-AI-003",
+    "market-entry-AI-008",
+    "passage-source-policy-browser-2",
+    "policy-effective",
+    "evidence-REC-001",
+    "evidence-REC-002",
+    "evidence-REC-003",
+    "evidence-REC-004",
+    "evidence-REC-005",
+    "evidence-REC-006",
+    "evidence-REC-007",
+    "evidence-REC-008",
+    "evidence-REC-009",
+    "evidence-REC-010",
+    "calendar-ACT-001",
+    "calendar-ACT-002",
+    "calendar-ACT-003",
+    "calendar-ACT-004",
+    "calendar-ACT-005",
+    "calendar-ACT-006",
+    "calendar-ACT-007",
+    "calendar-ACT-008",
+    "issue-REC-003",
+    "issue-REC-008",
+    "issue-REC-002",
+    "issue-REC-005",
+    "issue-REC-009",
+    "issue-REC-010",
+    "market-entry-gap-AI-005",
+    "policy-coverage",
+    "supplement-07f4c918a00c8919",
+    "supplement-744e2c04498c2a36",
+    "interview-policy-date",
+    "reconciliation-basis"
+  ],
+  "state": {
+    "system_facts": [
+      {
+        "id": "systems-AI-001",
+        "summary": "Learner Support Chat",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-001",
+          "system_name": "Learner Support Chat",
+          "use_case": "Answers routine learner questions",
+          "owner": "Learner Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "yes",
+          "human_review": "staff escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-20",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-001",
+        "row": 2,
+        "tab": "default CSV export",
+        "owner": "Learner Operations"
+      },
+      {
+        "id": "systems-AI-002",
+        "summary": "Admissions Draft Assistant",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-002",
+          "system_name": "Admissions Draft Assistant",
+          "use_case": "Drafts applicant email replies",
+          "owner": "Admissions",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "applicants",
+          "output_type": "text",
+          "current_notice": "unknown",
+          "human_review": "advisor approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-07-01",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-002",
+        "row": 3,
+        "tab": "default CSV export",
+        "owner": "Admissions"
+      },
+      {
+        "id": "systems-AI-003",
+        "summary": "Campaign Image Studio",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-003",
+          "system_name": "Campaign Image Studio",
+          "use_case": "Creates public campaign images",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_image",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-22",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-003",
+        "row": 4,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "systems-AI-004",
+        "summary": "Pronunciation Coach",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-004",
+          "system_name": "Pronunciation Coach",
+          "use_case": "Provides spoken practice feedback",
+          "owner": "Learning Experience",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "instructor escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-18",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-004",
+        "row": 5,
+        "tab": "default CSV export",
+        "owner": "Learning Experience"
+      },
+      {
+        "id": "systems-AI-005",
+        "summary": "Remote Proctor Signal",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-005",
+          "system_name": "Remote Proctor Signal",
+          "use_case": "Flags assessment sessions for review",
+          "owner": "Assessment Operations",
+          "provider_role": "unknown",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "classification",
+          "current_notice": "yes",
+          "human_review": "human adjudication",
+          "evidence_status": "stale",
+          "evidence_updated_at": "2026-04-15",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-005",
+        "row": 6,
+        "tab": "default CSV export",
+        "owner": "Assessment Operations"
+      },
+      {
+        "id": "systems-AI-006",
+        "summary": "Staff Summary Assistant",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-006",
+          "system_name": "Staff Summary Assistant",
+          "use_case": "Summarizes internal meeting notes",
+          "owner": "People Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "staff",
+          "output_type": "text",
+          "current_notice": "not_applicable",
+          "human_review": "author review",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-14",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-006",
+        "row": 7,
+        "tab": "default CSV export",
+        "owner": "People Operations"
+      },
+      {
+        "id": "systems-AI-007",
+        "summary": "Website Guide Avatar",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-007",
+          "system_name": "Website Guide Avatar",
+          "use_case": "Answers public programme questions",
+          "owner": "Marketing",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "marketing escalation",
+          "evidence_status": "conflicting",
+          "evidence_updated_at": "2026-08-21",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-007",
+        "row": 8,
+        "tab": "default CSV export",
+        "owner": "Marketing"
+      },
+      {
+        "id": "systems-AI-008",
+        "summary": "Video Localisation Tool",
+        "evidence_ids": [
+          "source-systems"
+        ],
+        "values": {
+          "system_id": "AI-008",
+          "system_name": "Video Localisation Tool",
+          "use_case": "Generates dubbed public programme videos",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_audio_video",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-08-19",
+          "record_version": "register-2026-08-26"
+        },
+        "system_id": "AI-008",
+        "row": 9,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "passage-source-policy-browser-1",
+        "summary": "AI-001",
+        "evidence_ids": [
+          "source-policy-browser-1"
+        ],
+        "section": "AI-001",
+        "text": "Learners exchange questions and generated replies directly with the licensed support chat. It does not classify biometric data or infer emotions or intentions. The existing notice and evidence reports remain the source for disclosure practice.",
+        "system_id": "AI-001"
+      },
+      {
+        "id": "passage-supplement-07f4c918a00c8919",
+        "summary": "Article 50 review - company operating facts",
+        "evidence_ids": [
+          "supplement-07f4c918a00c8919"
+        ],
+        "section": "Article 50 review - company operating facts",
+        "text": "Context revision: RC-CONTEXT-2026-09-12-R1\nBusiness observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.\nPrepared by Operations with the named system owners for the current review. These are authored facts for the fictional Quillhaven training case, not statements about a real company or a Legal decision. This context supplements the unchanged AI-POL-2026-08-15 policy and the dated system, evidence and action registers. It does not revise their recorded notices, evidence states, proposed dates or approvals.",
+        "system_id": null
+      },
+      {
+        "id": "passage-supplement-744e2c04498c2a36",
+        "summary": "Product timing and evidence limits",
+        "evidence_ids": [
+          "supplement-744e2c04498c2a36"
+        ],
+        "section": "Product timing and evidence limits",
+        "text": "The suppliers' product-release notices held by Operations report that the currently licensed image-generation product used for AI-003 and audio/video-generation product used for AI-008 were first offered commercially in the EU on 1 June 2026. These are product market-entry dates, not the dates Quillhaven exported or published individual images or videos. They do not identify Quillhaven as the supplier. Current release and market-entry evidence for AI-005 remains unavailable.\nThis document records owner-supplied operating facts. It does not replace missing screenshots, prove provenance metadata survived publication, refresh stale evidence, authorize an exception or settle statutory applicability. No Legal approval, expiry date, activated policy or new operational deadline is supplied. Legal reviews the learner's supported interpretation; system owners resolve the specifically identified factual gaps.",
+        "system_id": null
+      },
+      {
+        "id": "market-entry-AI-003",
+        "summary": "Operations reports supplier product market entry; the original notices were not captured.",
+        "evidence_ids": [
+          "supplement-744e2c04498c2a36"
+        ],
+        "system_id": "AI-003",
+        "reported_eu_market_entry": "2026-06-01",
+        "owner": "Operations"
+      },
+      {
+        "id": "market-entry-AI-008",
+        "summary": "Operations reports supplier product market entry; the original notices were not captured.",
+        "evidence_ids": [
+          "supplement-744e2c04498c2a36"
+        ],
+        "system_id": "AI-008",
+        "reported_eu_market_entry": "2026-06-01",
+        "owner": "Operations"
+      }
+    ],
+    "policy_controls": [
+      {
+        "id": "passage-source-policy-browser-2",
+        "summary": "Internal AI-use policy",
+        "evidence_ids": [
+          "source-policy-browser-2"
+        ],
+        "section": "Internal AI-use policy",
+        "text": "Policy version: AI-POL-2026-08-15",
+        "system_id": null
+      },
+      {
+        "id": "policy-effective",
+        "summary": "Manager confirmed the effective date of the captured edition.",
+        "evidence_ids": [
+          "interview-policy-date",
+          "source-policy-browser-2"
+        ],
+        "version": "AI-POL-2026-08-15",
+        "effective_date": "2026-08-15"
+      }
+    ],
+    "incident_evidence": [
+      {
+        "id": "evidence-REC-001",
+        "summary": "Notice screenshot and release record agree",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-001",
+          "system_id": "AI-001",
+          "record_type": "evidence",
+          "reported_at": "2026-08-20",
+          "owner": "Learner Operations",
+          "status": "closed",
+          "evidence_ref": "notice-screen-v3",
+          "evidence_state": "complete",
+          "notes": "Notice screenshot and release record agree"
+        },
+        "system_id": "AI-001",
+        "row": 2,
+        "tab": "default CSV export",
+        "owner": "Learner Operations"
+      },
+      {
+        "id": "evidence-REC-002",
+        "summary": "No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-002",
+          "system_id": "AI-002",
+          "record_type": "evidence_gap",
+          "reported_at": "2026-08-23",
+          "owner": "Admissions",
+          "status": "open",
+          "evidence_ref": "applicant-email-sample",
+          "evidence_state": "missing",
+          "notes": "No evidence that recipients are told when generated text is used"
+        },
+        "system_id": "AI-002",
+        "row": 3,
+        "tab": "default CSV export",
+        "owner": "Admissions"
+      },
+      {
+        "id": "evidence-REC-003",
+        "summary": "Visible label exists but exported platform copy may have lost metadata",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-003",
+          "system_id": "AI-003",
+          "record_type": "incident",
+          "reported_at": "2026-08-24",
+          "owner": "Communications",
+          "status": "open",
+          "evidence_ref": "social-post-884",
+          "evidence_state": "conflicting",
+          "notes": "Visible label exists but exported platform copy may have lost metadata"
+        },
+        "system_id": "AI-003",
+        "row": 4,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "evidence-REC-004",
+        "summary": "First interaction contains no AI notice",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-004",
+          "system_id": "AI-004",
+          "record_type": "incident",
+          "reported_at": "2026-08-18",
+          "owner": "Learning Experience",
+          "status": "open",
+          "evidence_ref": "coach-onboarding-v2",
+          "evidence_state": "complete",
+          "notes": "First interaction contains no AI notice"
+        },
+        "system_id": "AI-004",
+        "row": 5,
+        "tab": "default CSV export",
+        "owner": "Learning Experience"
+      },
+      {
+        "id": "evidence-REC-005",
+        "summary": "Provider role questionnaire predates the current release",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-005",
+          "system_id": "AI-005",
+          "record_type": "evidence_gap",
+          "reported_at": "2026-08-25",
+          "owner": "Assessment Operations",
+          "status": "open",
+          "evidence_ref": "provider-role-questionnaire",
+          "evidence_state": "stale",
+          "notes": "Provider role questionnaire predates the current release"
+        },
+        "system_id": "AI-005",
+        "row": 6,
+        "tab": "default CSV export",
+        "owner": "Assessment Operations"
+      },
+      {
+        "id": "evidence-REC-006",
+        "summary": "Flag never makes the final assessment decision",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-006",
+          "system_id": "AI-005",
+          "record_type": "evidence",
+          "reported_at": "2026-08-25",
+          "owner": "Assessment Operations",
+          "status": "open",
+          "evidence_ref": "human-review-sop-v4",
+          "evidence_state": "complete",
+          "notes": "Flag never makes the final assessment decision"
+        },
+        "system_id": "AI-005",
+        "row": 7,
+        "tab": "default CSV export",
+        "owner": "Assessment Operations"
+      },
+      {
+        "id": "evidence-REC-007",
+        "summary": "Tool is restricted to staff workspace",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-007",
+          "system_id": "AI-006",
+          "record_type": "evidence",
+          "reported_at": "2026-08-14",
+          "owner": "People Operations",
+          "status": "closed",
+          "evidence_ref": "internal-use-review",
+          "evidence_state": "complete",
+          "notes": "Tool is restricted to staff workspace"
+        },
+        "system_id": "AI-006",
+        "row": 8,
+        "tab": "default CSV export",
+        "owner": "People Operations"
+      },
+      {
+        "id": "evidence-REC-008",
+        "summary": "Owner says a banner exists but the current capture shows none",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-008",
+          "system_id": "AI-007",
+          "record_type": "incident",
+          "reported_at": "2026-08-21",
+          "owner": "Marketing",
+          "status": "open",
+          "evidence_ref": "avatar-page-capture",
+          "evidence_state": "conflicting",
+          "notes": "Owner says a banner exists but the current capture shows none"
+        },
+        "system_id": "AI-007",
+        "row": 9,
+        "tab": "default CSV export",
+        "owner": "Marketing"
+      },
+      {
+        "id": "evidence-REC-009",
+        "summary": "Visible label verified but machine-readable provenance not checked",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-009",
+          "system_id": "AI-008",
+          "record_type": "evidence",
+          "reported_at": "2026-08-19",
+          "owner": "Communications",
+          "status": "open",
+          "evidence_ref": "localisation-export-test",
+          "evidence_state": "partial",
+          "notes": "Visible label verified but machine-readable provenance not checked"
+        },
+        "system_id": "AI-008",
+        "row": 10,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "evidence-REC-010",
+        "summary": "No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "source-evidence"
+        ],
+        "values": {
+          "record_id": "REC-010",
+          "system_id": "AI-008",
+          "record_type": "exception_request",
+          "reported_at": "2026-08-26",
+          "owner": "Communications",
+          "status": "draft",
+          "evidence_ref": "exception-draft-008",
+          "evidence_state": "missing",
+          "notes": "No Legal approval or expiry date recorded"
+        },
+        "system_id": "AI-008",
+        "row": 11,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      }
+    ],
+    "calendar_proposals": [
+      {
+        "id": "calendar-ACT-001",
+        "summary": "Add and verify first-interaction AI notice",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-001",
+          "system_id": "AI-004",
+          "action": "Add and verify first-interaction AI notice",
+          "owner": "Learning Experience",
+          "due_date": "2026-09-04",
+          "status": "planned",
+          "approval_required": "operations",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-004",
+        "row": 2,
+        "tab": "default CSV export",
+        "owner": "Learning Experience"
+      },
+      {
+        "id": "calendar-ACT-002",
+        "summary": "Resolve disclosure evidence conflict",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-002",
+          "system_id": "AI-007",
+          "action": "Resolve disclosure evidence conflict",
+          "owner": "Marketing",
+          "due_date": "2026-09-03",
+          "status": "open",
+          "approval_required": "operations",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-007",
+        "row": 3,
+        "tab": "default CSV export",
+        "owner": "Marketing"
+      },
+      {
+        "id": "calendar-ACT-003",
+        "summary": "Confirm recipient disclosure practice",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-003",
+          "system_id": "AI-002",
+          "action": "Confirm recipient disclosure practice",
+          "owner": "Admissions",
+          "due_date": "2026-09-08",
+          "status": "open",
+          "approval_required": "legal",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-002",
+        "row": 4,
+        "tab": "default CSV export",
+        "owner": "Admissions"
+      },
+      {
+        "id": "calendar-ACT-004",
+        "summary": "Verify machine-readable provenance after publishing",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-004",
+          "system_id": "AI-003",
+          "action": "Verify machine-readable provenance after publishing",
+          "owner": "Communications",
+          "due_date": "2026-09-10",
+          "status": "open",
+          "approval_required": "operations",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-003",
+        "row": 5,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "calendar-ACT-005",
+        "summary": "Refresh provider-role and release evidence",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-005",
+          "system_id": "AI-005",
+          "action": "Refresh provider-role and release evidence",
+          "owner": "Assessment Operations",
+          "due_date": "2026-09-12",
+          "status": "open",
+          "approval_required": "legal",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-005",
+        "row": 6,
+        "tab": "default CSV export",
+        "owner": "Assessment Operations"
+      },
+      {
+        "id": "calendar-ACT-006",
+        "summary": "Complete provenance test",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-006",
+          "system_id": "AI-008",
+          "action": "Complete provenance test",
+          "owner": "Communications",
+          "due_date": "2026-09-09",
+          "status": "open",
+          "approval_required": "operations",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-008",
+        "row": 7,
+        "tab": "default CSV export",
+        "owner": "Communications"
+      },
+      {
+        "id": "calendar-ACT-007",
+        "summary": "Review exception request",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-007",
+          "system_id": "AI-008",
+          "action": "Review exception request",
+          "owner": "Legal",
+          "due_date": "2026-09-15",
+          "status": "blocked",
+          "approval_required": "legal",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "AI-008",
+        "row": 8,
+        "tab": "default CSV export",
+        "owner": "Legal"
+      },
+      {
+        "id": "calendar-ACT-008",
+        "summary": "Quarterly AI register evidence review",
+        "evidence_ids": [
+          "source-calendar"
+        ],
+        "values": {
+          "action_id": "ACT-008",
+          "system_id": "ALL",
+          "action": "Quarterly AI register evidence review",
+          "owner": "Operations",
+          "due_date": "2026-10-02",
+          "status": "scheduled",
+          "approval_required": "operations",
+          "source_version": "calendar-2026-08-26"
+        },
+        "system_id": "ALL",
+        "row": 9,
+        "tab": "default CSV export",
+        "owner": "Operations"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "issue-REC-003",
+        "summary": "Visible label exists but exported platform copy may have lost metadata",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "reported_state": "conflicting",
+        "related_records": [
+          "evidence-REC-003",
+          "systems-AI-003"
+        ],
+        "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+      },
+      {
+        "id": "issue-REC-008",
+        "summary": "Owner says a banner exists but the current capture shows none",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "reported_state": "conflicting",
+        "related_records": [
+          "evidence-REC-008",
+          "systems-AI-007"
+        ],
+        "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+      }
+    ],
+    "evidence_gaps": [
+      {
+        "id": "issue-REC-002",
+        "summary": "No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "reported_state": "missing",
+        "related_records": [
+          "evidence-REC-002",
+          "systems-AI-002"
+        ],
+        "resolution_need": "Obtain missing or current proof from the record owner."
+      },
+      {
+        "id": "issue-REC-005",
+        "summary": "Provider role questionnaire predates the current release",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "reported_state": "stale",
+        "related_records": [
+          "evidence-REC-005",
+          "systems-AI-005"
+        ],
+        "resolution_need": "Obtain missing or current proof from the record owner."
+      },
+      {
+        "id": "issue-REC-009",
+        "summary": "Visible label verified but machine-readable provenance not checked",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "reported_state": "partial",
+        "related_records": [
+          "evidence-REC-009",
+          "systems-AI-008"
+        ],
+        "resolution_need": "Obtain missing or current proof from the record owner."
+      },
+      {
+        "id": "issue-REC-010",
+        "summary": "No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "source-evidence",
+          "source-systems"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "reported_state": "missing",
+        "related_records": [
+          "evidence-REC-010",
+          "systems-AI-008"
+        ],
+        "resolution_need": "Obtain missing or current proof from the record owner."
+      },
+      {
+        "id": "market-entry-gap-AI-005",
+        "summary": "Current release and market-entry evidence unavailable.",
+        "evidence_ids": [
+          "supplement-744e2c04498c2a36"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "resolution_need": "Obtain current supplier release and EU market-entry evidence."
+      },
+      {
+        "id": "policy-coverage",
+        "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+        "evidence_ids": [
+          "source-policy",
+          "source-policy-browser-1",
+          "source-policy-browser-2"
+        ],
+        "owner": "Operations",
+        "resolution_need": "Supply versioned policy clauses for each remaining control."
+      }
+    ],
+    "supplemental_sources": [
+      {
+        "id": "supplement-07f4c918a00c8919",
+        "summary": "Operator-selected passage received after capture.",
+        "evidence_ids": [],
+        "filename": "policy-selection-75cff7ce-c62c-405a-9014-65049ec2197c-1795383229777.json",
+        "sha256": "sha256:07f4c918a00c89190c9db0ea6632a68881586996cd9049fafbf5df7fcbadb06c",
+        "selection": {
+          "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+          "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+          "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "section": "Article 50 review - company operating facts",
+          "passage": "Context revision: RC-CONTEXT-2026-09-12-R1\nBusiness observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.\nPrepared by Operations with the named system owners for the current review. These are authored facts for the fictional Quillhaven training case, not statements about a real company or a Legal decision. This context supplements the unchanged AI-POL-2026-08-15 policy and the dated system, evidence and action registers. It does not revise their recorded notices, evidence states, proposed dates or approvals.",
+          "page_loaded_at": "2026-11-22T21:28:14.285Z",
+          "captured_at": "2026-11-22T21:33:49.775Z"
+        }
+      },
+      {
+        "id": "supplement-744e2c04498c2a36",
+        "summary": "Operator-selected passage received after capture.",
+        "evidence_ids": [],
+        "filename": "policy-selection-75cff7ce-c62c-405a-9014-65049ec2197c-1795383381833.json",
+        "sha256": "sha256:744e2c04498c2a36c35abc58e7ded42ba46c4a1ea724d62916055a8b2c294b9c",
+        "selection": {
+          "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+          "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+          "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "section": "Product timing and evidence limits",
+          "passage": "The suppliers' product-release notices held by Operations report that the currently licensed image-generation product used for AI-003 and audio/video-generation product used for AI-008 were first offered commercially in the EU on 1 June 2026. These are product market-entry dates, not the dates Quillhaven exported or published individual images or videos. They do not identify Quillhaven as the supplier. Current release and market-entry evidence for AI-005 remains unavailable.\nThis document records owner-supplied operating facts. It does not replace missing screenshots, prove provenance metadata survived publication, refresh stale evidence, authorize an exception or settle statutory applicability. No Legal approval, expiry date, activated policy or new operational deadline is supplied. Legal reviews the learner's supported interpretation; system owners resolve the specifically identified factual gaps.",
+          "page_loaded_at": "2026-11-22T21:28:14.285Z",
+          "captured_at": "2026-11-22T21:36:21.832Z"
+        }
+      },
+      {
+        "id": "interview-policy-date",
+        "summary": "Manager’s effective-date clarification.",
+        "evidence_ids": [],
+        "filename": "project-b-regulatory-compliance-interview4.md",
+        "sha256": "sha256:6544813bfe5fc710d1ea1dfc4055a78c145b68ea36ebe3e3a01e1bb668aa2618",
+        "line": 282,
+        "text": "The effective date of our internal policy is August 15, 2026. The supplemental company operating facts have their own revision history, specifically marked as revision R1."
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "reconciliation-basis",
+      "summary": "Join system IDs while preserving each observation and proposal.",
+      "evidence_ids": [
+        "source-calendar",
+        "source-evidence",
+        "source-policy",
+        "source-policy-browser-1",
+        "source-policy-browser-2",
+        "source-systems"
+      ],
+      "concern": "Limits of source evidence",
+      "options": [
+        "Use individual claims with evidence",
+        "Defer the entire review"
+      ],
+      "chosen": "Defer dependent conclusions where evidence is insufficient",
+      "source_basis": "Current captured records and identified gaps",
+      "rationale": "A missing authority prevents formal conclusions; missing operational records can be isolated.",
+      "tradeoffs": [
+        "Contradictory reports remain visible until a reviewer resolves them."
+      ],
+      "downstream_effect": "Stage D must honor authority blockers, role distinctions and unresolved evidence."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-1",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-1"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-2",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-2"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "issue-REC-002",
+      "summary": "No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-002",
+        "systems-AI-002"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-005",
+      "summary": "Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reported_state": "stale",
+      "related_records": [
+        "evidence-REC-005",
+        "systems-AI-005"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-009",
+      "summary": "Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "partial",
+      "related_records": [
+        "evidence-REC-009",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-010",
+      "summary": "No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-010",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "market-entry-gap-AI-005",
+      "summary": "Current release and market-entry evidence unavailable.",
+      "evidence_ids": [
+        "supplement-744e2c04498c2a36"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current supplier release and EU market-entry evidence."
+    },
+    {
+      "id": "policy-coverage",
+      "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+      "evidence_ids": [
+        "source-policy",
+        "source-policy-browser-1",
+        "source-policy-browser-2"
+      ],
+      "owner": "Operations",
+      "resolution_need": "Supply versioned policy clauses for each remaining control."
+    },
+    {
+      "id": "issue-REC-003",
+      "summary": "Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-003",
+        "systems-AI-003"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "issue-REC-008",
+      "summary": "Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-008",
+        "systems-AI-007"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    }
+  ]
+}

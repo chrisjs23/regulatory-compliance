@@ -1,0 +1,91 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven Academy//Regulatory Change Review//EN
+BEGIN:VEVENT
+SUMMARY:Add and verify first-interaction AI notice
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+DTSTAMP:20261122T233707Z
+UID:act-001@quillhaven.invalid
+DESCRIPTION:Action ACT-001\; system AI-004\; responsible role Learning Exp
+ erience\; basis calendar-ACT-001\, impact-AI-004-art50-1\; approval pendin
+ g\; local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Resolve disclosure evidence conflict
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+DTSTAMP:20261122T233707Z
+UID:act-002@quillhaven.invalid
+DESCRIPTION:Action ACT-002\; system AI-007\; responsible role Marketing\; 
+ basis calendar-ACT-002\, impact-AI-007-art50-1\; approval pending\; local 
+ draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Confirm recipient disclosure practice
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DTSTAMP:20261122T233707Z
+UID:act-003@quillhaven.invalid
+DESCRIPTION:Action ACT-003\; system AI-002\; responsible role Admissions\;
+  basis calendar-ACT-003\, impact-AI-002-art50-4-text\; approval pending\; 
+ local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Verify machine-readable provenance after publishing
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+DTSTAMP:20261122T233707Z
+UID:act-004@quillhaven.invalid
+DESCRIPTION:Action ACT-004\; system AI-003\; responsible role Communicatio
+ ns\; basis calendar-ACT-004\, impact-AI-003-art50-4-media\; approval pendi
+ ng\; local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Refresh provider-role and release evidence
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20261122T233707Z
+UID:act-005@quillhaven.invalid
+DESCRIPTION:Action ACT-005\; system AI-005\; responsible role Assessment O
+ perations\; basis calendar-ACT-005\, impact-AI-005-art50-3\; approval pend
+ ing\; local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Complete provenance test
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+DTSTAMP:20261122T233707Z
+UID:act-006@quillhaven.invalid
+DESCRIPTION:Action ACT-006\; system AI-008\; responsible role Communicatio
+ ns\; basis calendar-ACT-006\, impact-AI-008-art50-4-media\; approval pendi
+ ng\; local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Review exception request
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+DTSTAMP:20261122T233707Z
+UID:act-007@quillhaven.invalid
+DESCRIPTION:Action ACT-007\; system AI-008\; responsible role Legal\; basi
+ s calendar-ACT-007\, impact-AI-008-art50-4-media\; approval pending\; loca
+ l draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Quarterly AI register evidence review
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+DTSTAMP:20261122T233707Z
+UID:act-008@quillhaven.invalid
+DESCRIPTION:Action ACT-008\; system ALL\; responsible role Operations\; ba
+ sis calendar-ACT-008\; approval pending\; local draft proposal
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

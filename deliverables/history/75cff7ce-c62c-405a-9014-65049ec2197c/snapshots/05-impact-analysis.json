@@ -1,0 +1,754 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+  "snapshot_id": "91463ef8-c13a-4dfb-b6fe-9601a79f79cd",
+  "sequence": 5,
+  "stage": "impact-analysis",
+  "created_at": "2026-11-22T23:37:06.735614+00:00",
+  "status": "partial",
+  "predecessor": {
+    "path": "snapshots/04-evidence-reconciliation.json",
+    "snapshot_id": "d1a45687-f89e-4d93-b683-d3a396ed99e0",
+    "sha256": "sha256:85662fd343a1e6b527f59877c42842c924baaad2c736a89d677450ddd785ad67"
+  },
+  "consumed_record_ids": [
+    "art111-4",
+    "art50-1",
+    "art50-2",
+    "art50-3",
+    "art50-4-media",
+    "art50-4-text",
+    "art50-5",
+    "evidence-REC-001",
+    "evidence-REC-002",
+    "evidence-REC-003",
+    "evidence-REC-004",
+    "evidence-REC-005",
+    "evidence-REC-006",
+    "evidence-REC-007",
+    "evidence-REC-008",
+    "evidence-REC-009",
+    "evidence-REC-010",
+    "issue-REC-002",
+    "issue-REC-003",
+    "issue-REC-005",
+    "issue-REC-008",
+    "issue-REC-009",
+    "issue-REC-010",
+    "market-entry-AI-003",
+    "market-entry-AI-008",
+    "market-entry-gap-AI-005",
+    "policy-effective",
+    "systems-AI-001",
+    "systems-AI-002",
+    "systems-AI-003",
+    "systems-AI-004",
+    "systems-AI-005",
+    "systems-AI-006",
+    "systems-AI-007",
+    "systems-AI-008"
+  ],
+  "produced_record_ids": [
+    "impact-AI-001-art50-1",
+    "impact-AI-002-art50-4-text",
+    "impact-AI-003-art50-4-media",
+    "impact-AI-003-art50-2",
+    "impact-AI-003-art111-4",
+    "impact-AI-004-art50-1",
+    "impact-AI-005-art50-3",
+    "impact-AI-005-art111-4",
+    "impact-AI-006-art50-4-text",
+    "impact-AI-007-art50-1",
+    "impact-AI-008-art50-4-media",
+    "impact-AI-008-art50-2",
+    "impact-AI-008-art111-4",
+    "unaffected-AI-001",
+    "unaffected-AI-003-art50-2",
+    "unaffected-AI-003-art111-4",
+    "unaffected-AI-006",
+    "unaffected-AI-008-art50-2",
+    "unaffected-AI-008-art111-4",
+    "impact-conflict-AI-007",
+    "impact-gap-AI-002",
+    "impact-gap-AI-003",
+    "impact-gap-AI-005",
+    "impact-gap-AI-005-art111-4",
+    "impact-gap-AI-008",
+    "policy-review-context",
+    "impact-basis"
+  ],
+  "state": {
+    "impacts": [
+      {
+        "id": "impact-AI-001-art50-1",
+        "summary": "Current notice and complete evidence show no identified notice remediation.",
+        "evidence_ids": [
+          "systems-AI-001",
+          "evidence-REC-001",
+          "art50-1",
+          "art50-5"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-001",
+        "rule_ref": "art50-1",
+        "owner": "Learner Operations",
+        "reason": "Current notice and complete evidence show no identified notice remediation.",
+        "resolution_need": "System owner confirms the captured notice remains current.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-002-art50-4-text",
+        "summary": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+        "evidence_ids": [
+          "systems-AI-002",
+          "evidence-REC-002",
+          "issue-REC-002",
+          "art50-4-text"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-002",
+        "rule_ref": "art50-4-text",
+        "owner": "Admissions",
+        "reason": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+        "resolution_need": "Legal confirms the rule basis and exception; owner supplies current recipient samples.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-003-art50-4-media",
+        "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "evidence-REC-003",
+          "issue-REC-003",
+          "art50-4-media"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-003",
+        "rule_ref": "art50-4-media",
+        "owner": "Communications",
+        "reason": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-003-art50-2",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "art50-2",
+          "market-entry-AI-003"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-003",
+        "rule_ref": "art50-2",
+        "owner": "Communications",
+        "reason": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": "2026-06-01",
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-003-art111-4",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "art111-4",
+          "market-entry-AI-003"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-003",
+        "rule_ref": "art111-4",
+        "owner": "Communications",
+        "reason": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": "2026-06-01",
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-004-art50-1",
+        "summary": "The captured first interaction lacks an AI notice.",
+        "evidence_ids": [
+          "systems-AI-004",
+          "evidence-REC-004",
+          "art50-1",
+          "art50-5"
+        ],
+        "state": "supported-impact",
+        "system_id": "AI-004",
+        "rule_ref": "art50-1",
+        "owner": "Learning Experience",
+        "reason": "The captured first interaction lacks an AI notice.",
+        "resolution_need": "Verify and implement a clear first interaction notice; Legal confirms responsibility.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-005-art50-3",
+        "summary": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+        "evidence_ids": [
+          "systems-AI-005",
+          "evidence-REC-005",
+          "evidence-REC-006",
+          "issue-REC-005",
+          "market-entry-gap-AI-005",
+          "art50-3"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "rule_ref": "art50-3",
+        "owner": "Assessment Operations",
+        "reason": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+        "resolution_need": "Legal and the system owner confirm modality, role and current release evidence.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "unknown",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-005-art111-4",
+        "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "evidence_ids": [
+          "systems-AI-005",
+          "art111-4"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "rule_ref": "art111-4",
+        "owner": "Assessment Operations",
+        "reason": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "finding_scope": "possible provider transition only",
+        "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+      },
+      {
+        "id": "impact-AI-006-art50-4-text",
+        "summary": "Captured use is restricted to internal staff summaries, not public-interest publication.",
+        "evidence_ids": [
+          "systems-AI-006",
+          "evidence-REC-007",
+          "art50-4-text"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-006",
+        "rule_ref": "art50-4-text",
+        "owner": "People Operations",
+        "reason": "Captured use is restricted to internal staff summaries, not public-interest publication.",
+        "resolution_need": "Owner confirms the use has not expanded to public publication.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-007-art50-1",
+        "summary": "Owner and captured notice evidence disagree.",
+        "evidence_ids": [
+          "systems-AI-007",
+          "evidence-REC-008",
+          "issue-REC-008",
+          "art50-1",
+          "art50-5"
+        ],
+        "state": "conflicting",
+        "system_id": "AI-007",
+        "rule_ref": "art50-1",
+        "owner": "Marketing",
+        "reason": "Owner and captured notice evidence disagree.",
+        "resolution_need": "System owner must reconcile the current first interaction display.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-008-art50-4-media",
+        "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "evidence-REC-009",
+          "evidence-REC-010",
+          "issue-REC-009",
+          "issue-REC-010",
+          "art50-4-media"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "rule_ref": "art50-4-media",
+        "owner": "Communications",
+        "reason": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-008-art50-2",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "art50-2",
+          "market-entry-AI-008"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-008",
+        "rule_ref": "art50-2",
+        "owner": "Communications",
+        "reason": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": "2026-06-01",
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-008-art111-4",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "art111-4",
+          "market-entry-AI-008"
+        ],
+        "state": "supported-no-impact",
+        "system_id": "AI-008",
+        "rule_ref": "art111-4",
+        "owner": "Communications",
+        "reason": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": "2026-06-01",
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      }
+    ],
+    "unaffected_items": [
+      {
+        "id": "unaffected-AI-001",
+        "summary": "Current notice and complete evidence show no identified notice remediation.",
+        "evidence_ids": [
+          "impact-AI-001-art50-1"
+        ],
+        "system_id": "AI-001",
+        "rule_ref": "art50-1"
+      },
+      {
+        "id": "unaffected-AI-003-art50-2",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "impact-AI-003-art50-2"
+        ],
+        "system_id": "AI-003",
+        "rule_ref": "art50-2"
+      },
+      {
+        "id": "unaffected-AI-003-art111-4",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "impact-AI-003-art111-4"
+        ],
+        "system_id": "AI-003",
+        "rule_ref": "art111-4"
+      },
+      {
+        "id": "unaffected-AI-006",
+        "summary": "Captured use is restricted to internal staff summaries, not public-interest publication.",
+        "evidence_ids": [
+          "impact-AI-006-art50-4-text"
+        ],
+        "system_id": "AI-006",
+        "rule_ref": "art50-4-text"
+      },
+      {
+        "id": "unaffected-AI-008-art50-2",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "impact-AI-008-art50-2"
+        ],
+        "system_id": "AI-008",
+        "rule_ref": "art50-2"
+      },
+      {
+        "id": "unaffected-AI-008-art111-4",
+        "summary": "The register says the Academy is a deployer, not this product's provider; the provider-only duty or transition does not establish an Academy deadline. Supplier compliance remains unverified.",
+        "evidence_ids": [
+          "impact-AI-008-art111-4"
+        ],
+        "system_id": "AI-008",
+        "rule_ref": "art111-4"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "impact-conflict-AI-007",
+        "summary": "Owner and captured notice evidence disagree.",
+        "evidence_ids": [
+          "impact-AI-007-art50-1",
+          "issue-REC-008"
+        ],
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "resolution_need": "System owner must reconcile the current first interaction display."
+      }
+    ],
+    "unresolved_items": [
+      {
+        "id": "impact-gap-AI-002",
+        "summary": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+        "evidence_ids": [
+          "impact-AI-002-art50-4-text",
+          "issue-REC-002"
+        ],
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "resolution_need": "Legal confirms the rule basis and exception; owner supplies current recipient samples."
+      },
+      {
+        "id": "impact-gap-AI-003",
+        "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "evidence_ids": [
+          "impact-AI-003-art50-4-media"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+      },
+      {
+        "id": "impact-gap-AI-005",
+        "summary": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+        "evidence_ids": [
+          "impact-AI-005-art50-3",
+          "issue-REC-005",
+          "market-entry-gap-AI-005"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "resolution_need": "Legal and the system owner confirm modality, role and current release evidence."
+      },
+      {
+        "id": "impact-gap-AI-005-art111-4",
+        "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "evidence_ids": [
+          "impact-AI-005-art111-4"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+      },
+      {
+        "id": "impact-gap-AI-008",
+        "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+        "evidence_ids": [
+          "impact-AI-008-art50-4-media",
+          "issue-REC-009",
+          "issue-REC-010"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+      }
+    ],
+    "policy_context": [
+      {
+        "id": "policy-review-context",
+        "summary": "The captured policy edition was effective by the assigned review date; activation and full clause coverage remain unverified.",
+        "evidence_ids": [
+          "policy-effective"
+        ],
+        "version": "AI-POL-2026-08-15",
+        "effective_date": "2026-08-15",
+        "activation_status": "unverified",
+        "owner": "Operations"
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-1",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-1"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-2",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-2"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "issue-REC-002",
+      "summary": "No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-002",
+        "systems-AI-002"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-005",
+      "summary": "Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reported_state": "stale",
+      "related_records": [
+        "evidence-REC-005",
+        "systems-AI-005"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-009",
+      "summary": "Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "partial",
+      "related_records": [
+        "evidence-REC-009",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-010",
+      "summary": "No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-010",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "market-entry-gap-AI-005",
+      "summary": "Current release and market-entry evidence unavailable.",
+      "evidence_ids": [
+        "supplement-744e2c04498c2a36"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current supplier release and EU market-entry evidence."
+    },
+    {
+      "id": "policy-coverage",
+      "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+      "evidence_ids": [
+        "source-policy",
+        "source-policy-browser-1",
+        "source-policy-browser-2"
+      ],
+      "owner": "Operations",
+      "resolution_need": "Supply versioned policy clauses for each remaining control."
+    },
+    {
+      "id": "issue-REC-003",
+      "summary": "Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-003",
+        "systems-AI-003"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "issue-REC-008",
+      "summary": "Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-008",
+        "systems-AI-007"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "impact-conflict-AI-007",
+      "summary": "Owner and captured notice evidence disagree.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1",
+        "issue-REC-008"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "resolution_need": "System owner must reconcile the current first interaction display."
+    },
+    {
+      "id": "impact-gap-AI-002",
+      "summary": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text",
+        "issue-REC-002"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "resolution_need": "Legal confirms the rule basis and exception; owner supplies current recipient samples."
+    },
+    {
+      "id": "impact-gap-AI-003",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    },
+    {
+      "id": "impact-gap-AI-005",
+      "summary": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3",
+        "issue-REC-005",
+        "market-entry-gap-AI-005"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Legal and the system owner confirm modality, role and current release evidence."
+    },
+    {
+      "id": "impact-gap-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "impact-gap-AI-008",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media",
+        "issue-REC-009",
+        "issue-REC-010"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "impact-basis",
+      "summary": "Separate supported observations from conflicts and unresolved applicability.",
+      "evidence_ids": [
+        "art111-4",
+        "art50-1",
+        "art50-2",
+        "art50-3",
+        "art50-4-media",
+        "art50-4-text",
+        "art50-5",
+        "evidence-REC-001",
+        "evidence-REC-002",
+        "evidence-REC-003",
+        "evidence-REC-004",
+        "evidence-REC-005",
+        "evidence-REC-006",
+        "evidence-REC-007",
+        "evidence-REC-008",
+        "evidence-REC-009",
+        "evidence-REC-010",
+        "issue-REC-002",
+        "issue-REC-003",
+        "issue-REC-005",
+        "issue-REC-008",
+        "issue-REC-009",
+        "issue-REC-010",
+        "market-entry-AI-003",
+        "market-entry-AI-008",
+        "market-entry-gap-AI-005",
+        "policy-effective",
+        "systems-AI-001",
+        "systems-AI-002",
+        "systems-AI-003",
+        "systems-AI-004",
+        "systems-AI-005",
+        "systems-AI-006",
+        "systems-AI-007",
+        "systems-AI-008"
+      ],
+      "concern": "Legal and operational decisions require verified evidence and human review.",
+      "options": [
+        "Record bounded provisional findings",
+        "Defer every finding"
+      ],
+      "chosen": "Preserve supported findings and mark unresolved issues and approvals pending.",
+      "source_basis": "Captured authority, system records, evidence and source calendar proposals.",
+      "rationale": "Unavailable proof or approval cannot establish compliance or an activated deadline.",
+      "tradeoffs": [
+        "The draft retains open questions until owners and reviewers respond."
+      ],
+      "downstream_effect": "Stage E must render the same states and keep dates tentative."
+    }
+  ]
+}

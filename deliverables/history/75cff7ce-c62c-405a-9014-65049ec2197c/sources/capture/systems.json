@@ -1,0 +1,150 @@
+{
+  "label": "SYSTEMS",
+  "tab": "default CSV export",
+  "rows": [
+    {
+      "row": 2,
+      "values": {
+        "system_id": "AI-001",
+        "system_name": "Learner Support Chat",
+        "use_case": "Answers routine learner questions",
+        "owner": "Learner Operations",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "direct_interaction",
+        "current_notice": "yes",
+        "human_review": "staff escalation",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-20",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 3,
+      "values": {
+        "system_id": "AI-002",
+        "system_name": "Admissions Draft Assistant",
+        "use_case": "Drafts applicant email replies",
+        "owner": "Admissions",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "applicants",
+        "output_type": "text",
+        "current_notice": "unknown",
+        "human_review": "advisor approval",
+        "evidence_status": "partial",
+        "evidence_updated_at": "2026-07-01",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 4,
+      "values": {
+        "system_id": "AI-003",
+        "system_name": "Campaign Image Studio",
+        "use_case": "Creates public campaign images",
+        "owner": "Communications",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "synthetic_image",
+        "current_notice": "visible_label",
+        "human_review": "communications approval",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-22",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 5,
+      "values": {
+        "system_id": "AI-004",
+        "system_name": "Pronunciation Coach",
+        "use_case": "Provides spoken practice feedback",
+        "owner": "Learning Experience",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "direct_interaction",
+        "current_notice": "no",
+        "human_review": "instructor escalation",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-18",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 6,
+      "values": {
+        "system_id": "AI-005",
+        "system_name": "Remote Proctor Signal",
+        "use_case": "Flags assessment sessions for review",
+        "owner": "Assessment Operations",
+        "provider_role": "unknown",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "classification",
+        "current_notice": "yes",
+        "human_review": "human adjudication",
+        "evidence_status": "stale",
+        "evidence_updated_at": "2026-04-15",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 7,
+      "values": {
+        "system_id": "AI-006",
+        "system_name": "Staff Summary Assistant",
+        "use_case": "Summarizes internal meeting notes",
+        "owner": "People Operations",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "staff",
+        "output_type": "text",
+        "current_notice": "not_applicable",
+        "human_review": "author review",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-14",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 8,
+      "values": {
+        "system_id": "AI-007",
+        "system_name": "Website Guide Avatar",
+        "use_case": "Answers public programme questions",
+        "owner": "Marketing",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "direct_interaction",
+        "current_notice": "no",
+        "human_review": "marketing escalation",
+        "evidence_status": "conflicting",
+        "evidence_updated_at": "2026-08-21",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "row": 9,
+      "values": {
+        "system_id": "AI-008",
+        "system_name": "Video Localisation Tool",
+        "use_case": "Generates dubbed public programme videos",
+        "owner": "Communications",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "synthetic_audio_video",
+        "current_notice": "visible_label",
+        "human_review": "communications approval",
+        "evidence_status": "partial",
+        "evidence_updated_at": "2026-08-19",
+        "record_version": "register-2026-08-26"
+      }
+    }
+  ]
+}

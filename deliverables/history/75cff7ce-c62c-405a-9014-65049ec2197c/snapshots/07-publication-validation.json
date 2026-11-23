@@ -1,0 +1,680 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+  "snapshot_id": "e7f65cc1-2c80-4fa7-8215-11151e536b48",
+  "sequence": 7,
+  "stage": "publication-validation",
+  "created_at": "2026-11-22T23:37:07.208611+00:00",
+  "status": "partial",
+  "predecessor": {
+    "path": "snapshots/06-actions-and-approvals.json",
+    "snapshot_id": "6e1258bc-9a27-471e-ba74-421efdf97f95",
+    "sha256": "sha256:09d442f172022b19d72ae834b211bc0f67d06c1e0826526e07b813f79162678f"
+  },
+  "consumed_record_ids": [
+    "action-ACT-001",
+    "action-ACT-002",
+    "action-ACT-003",
+    "action-ACT-004",
+    "action-ACT-005",
+    "action-ACT-006",
+    "action-ACT-007",
+    "action-ACT-008",
+    "impact-AI-001-art50-1",
+    "impact-AI-002-art50-4-text",
+    "impact-AI-003-art111-4",
+    "impact-AI-003-art50-2",
+    "impact-AI-003-art50-4-media",
+    "impact-AI-004-art50-1",
+    "impact-AI-005-art111-4",
+    "impact-AI-005-art50-3",
+    "impact-AI-006-art50-4-text",
+    "impact-AI-007-art50-1",
+    "impact-AI-008-art111-4",
+    "impact-AI-008-art50-2",
+    "impact-AI-008-art50-4-media",
+    "request-ACT-001",
+    "request-ACT-002",
+    "request-ACT-003",
+    "request-ACT-004",
+    "request-ACT-005",
+    "request-ACT-006",
+    "request-ACT-007",
+    "request-ACT-008",
+    "request-impact-AI-002-art50-4-text",
+    "request-impact-AI-003-art50-4-media",
+    "request-impact-AI-004-art50-1",
+    "request-impact-AI-005-art111-4",
+    "request-impact-AI-005-art50-3",
+    "request-impact-AI-007-art50-1",
+    "request-impact-AI-008-art50-4-media",
+    "request-policy-activation"
+  ],
+  "produced_record_ids": [
+    "artifact-register",
+    "artifact-brief",
+    "artifact-calendar",
+    "check-cross-file",
+    "binding-request-ACT-001",
+    "binding-request-ACT-002",
+    "binding-request-ACT-003",
+    "binding-request-ACT-004",
+    "binding-request-ACT-005",
+    "binding-request-ACT-006",
+    "binding-request-ACT-007",
+    "binding-request-ACT-008",
+    "binding-request-impact-AI-002-art50-4-text",
+    "binding-request-impact-AI-003-art50-4-media",
+    "binding-request-impact-AI-004-art50-1",
+    "binding-request-impact-AI-005-art50-3",
+    "binding-request-impact-AI-005-art111-4",
+    "binding-request-impact-AI-007-art50-1",
+    "binding-request-impact-AI-008-art50-4-media",
+    "binding-request-policy-activation",
+    "publication-basis"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "artifact-register",
+        "path": "impact-register.csv",
+        "sha256": "sha256:b7c38a659381992ca35b970af2d46ecd81ab71d2a4d610b03e425b3ca8e9b026",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-brief",
+        "path": "compliance-brief.md",
+        "sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "validation_status": "valid"
+      },
+      {
+        "id": "artifact-calendar",
+        "path": "action-calendar.ics",
+        "sha256": "sha256:5a87aec8947b518546d8ca67d4d0d0419a340c29f8fb4c921fad85cd90ecf1d1",
+        "validation_status": "valid"
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "check-cross-file",
+        "summary": "Parsed CSV, brief references and RFC 5545 calendar agree with Stage D.",
+        "evidence_ids": [
+          "artifact-register",
+          "artifact-brief",
+          "artifact-calendar"
+        ],
+        "outcome": "passed"
+      }
+    ],
+    "publication_status": "validated",
+    "review_request_bindings": [
+      {
+        "id": "binding-request-ACT-001",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-001",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-001",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-002",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-002",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-002",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-003",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-003",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-003",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-004",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-004",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-004",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-005",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-005",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-005",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-006",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-006",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-006",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-007",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-007",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-007",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-ACT-008",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-ACT-008",
+          "artifact-brief"
+        ],
+        "request_id": "request-ACT-008",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "calendar-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-002-art50-4-text",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-002-art50-4-text",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-002-art50-4-text",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-003-art50-4-media",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-003-art50-4-media",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-003-art50-4-media",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-004-art50-1",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-004-art50-1",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-004-art50-1",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-005-art50-3",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-005-art50-3",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-005-art50-3",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-005-art111-4",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-005-art111-4",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-005-art111-4",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": null,
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-007-art50-1",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-007-art50-1",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-007-art50-1",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-impact-AI-008-art50-4-media",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-impact-AI-008-art50-4-media",
+          "artifact-brief"
+        ],
+        "request_id": "request-impact-AI-008-art50-4-media",
+        "reviewer": "Legal",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "register-2026-08-26",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "binding-request-policy-activation",
+        "summary": "Request binds to the exact reviewed brief.",
+        "evidence_ids": [
+          "request-policy-activation",
+          "artifact-brief"
+        ],
+        "request_id": "request-policy-activation",
+        "reviewer": "Operations",
+        "run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+        "source_version": "AI-POL-2026-08-15",
+        "reviewed_path": "compliance-brief.md",
+        "reviewed_sha256": "sha256:35cf1437f87cae6a5da1cef51df5732392444d9791d9bd981e340b0003e23aaf",
+        "delivery_status": "draft-not-sent"
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-1",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-1"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy-browser-2",
+      "summary": "Live browser selection retained. Check revision, applicability and coverage before relying on this clause.",
+      "evidence_ids": [
+        "source-policy-browser-2"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "issue-REC-002",
+      "summary": "No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-002",
+        "systems-AI-002"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-005",
+      "summary": "Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reported_state": "stale",
+      "related_records": [
+        "evidence-REC-005",
+        "systems-AI-005"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-009",
+      "summary": "Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "partial",
+      "related_records": [
+        "evidence-REC-009",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-010",
+      "summary": "No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-010",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "market-entry-gap-AI-005",
+      "summary": "Current release and market-entry evidence unavailable.",
+      "evidence_ids": [
+        "supplement-744e2c04498c2a36"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current supplier release and EU market-entry evidence."
+    },
+    {
+      "id": "policy-coverage",
+      "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+      "evidence_ids": [
+        "source-policy",
+        "source-policy-browser-1",
+        "source-policy-browser-2"
+      ],
+      "owner": "Operations",
+      "resolution_need": "Supply versioned policy clauses for each remaining control."
+    },
+    {
+      "id": "issue-REC-003",
+      "summary": "Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-003",
+        "systems-AI-003"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "issue-REC-008",
+      "summary": "Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-008",
+        "systems-AI-007"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "impact-conflict-AI-007",
+      "summary": "Owner and captured notice evidence disagree.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1",
+        "issue-REC-008"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "resolution_need": "System owner must reconcile the current first interaction display."
+    },
+    {
+      "id": "impact-gap-AI-002",
+      "summary": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text",
+        "issue-REC-002"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "resolution_need": "Legal confirms the rule basis and exception; owner supplies current recipient samples."
+    },
+    {
+      "id": "impact-gap-AI-003",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    },
+    {
+      "id": "impact-gap-AI-005",
+      "summary": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3",
+        "issue-REC-005",
+        "market-entry-gap-AI-005"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Legal and the system owner confirm modality, role and current release evidence."
+    },
+    {
+      "id": "impact-gap-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "impact-gap-AI-008",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media",
+        "issue-REC-009",
+        "issue-REC-010"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    },
+    {
+      "id": "escalation-impact-AI-002-art50-4-text",
+      "summary": "The record does not establish public-interest publication or the editorial exception; recipient disclosure proof is also incomplete.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reviewer": "Legal",
+      "resolution_need": "Legal confirms the rule basis and exception; owner supplies current recipient samples."
+    },
+    {
+      "id": "escalation-impact-AI-003-art50-4-media",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    },
+    {
+      "id": "escalation-impact-AI-004-art50-1",
+      "summary": "The captured first interaction lacks an AI notice.",
+      "evidence_ids": [
+        "impact-AI-004-art50-1"
+      ],
+      "system_id": "AI-004",
+      "owner": "Learning Experience",
+      "reviewer": "Operations",
+      "resolution_need": "Verify and implement a clear first interaction notice; Legal confirms responsibility."
+    },
+    {
+      "id": "escalation-impact-AI-005-art50-3",
+      "summary": "The record does not establish biometric categorisation or emotion recognition; provider role and release evidence are stale.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Legal and the system owner confirm modality, role and current release evidence."
+    },
+    {
+      "id": "escalation-impact-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "escalation-impact-AI-007-art50-1",
+      "summary": "Owner and captured notice evidence disagree.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reviewer": "Operations",
+      "resolution_need": "System owner must reconcile the current first interaction display."
+    },
+    {
+      "id": "escalation-impact-AI-008-art50-4-media",
+      "summary": "The record establishes generated media but not whether it constitutes a deep fake. A visible label is reported; machine-readable metadata is a separate question.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal assesses deep-fake applicability; owner verifies published labels and provenance separately."
+    },
+    {
+      "id": "escalation-policy-activation",
+      "summary": "Policy activation and remaining control clauses are not verified.",
+      "evidence_ids": [
+        "policy-review-context"
+      ],
+      "owner": "Operations",
+      "reviewer": "Operations",
+      "resolution_need": "Confirm activation and provide the remaining versioned policy clauses."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "publication-basis",
+      "summary": "Validate only the local review draft; retain all pending decisions.",
+      "evidence_ids": [
+        "artifact-register",
+        "artifact-brief",
+        "artifact-calendar"
+      ],
+      "concern": "Cross-file agreement and review binding",
+      "options": [
+        "Validate bounded draft",
+        "Claim final approval"
+      ],
+      "chosen": "Validate bounded draft only",
+      "source_basis": "Stages 05–06 and reread final artifact bytes",
+      "rationale": "File hashes and parsed content establish draft consistency, not human approval.",
+      "tradeoffs": [
+        "Outstanding authority or evidence keeps the run partial or blocked."
+      ],
+      "downstream_effect": "Stage F must archive and revalidate on any retry."
+    }
+  ]
+}

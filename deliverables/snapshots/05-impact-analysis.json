@@ -1,0 +1,823 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+  "snapshot_id": "37c84e13-dcf2-449a-be39-5d3e05034118",
+  "sequence": 5,
+  "stage": "impact-analysis",
+  "created_at": "2026-11-22T23:44:56.279186+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "path": "snapshots/04-evidence-reconciliation.json",
+    "snapshot_id": "352d7231-e0e6-412d-bca4-f480a9e6b979",
+    "sha256": "sha256:c86be2ab8f95ccd1616b0a451af676290d67c48dc9128269c1d6ad8ae45c8a36"
+  },
+  "consumed_record_ids": [
+    "authority-gap-amend",
+    "authority-gap-consolidated",
+    "authority-gap-oj",
+    "evidence-REC-001",
+    "evidence-REC-002",
+    "evidence-REC-003",
+    "evidence-REC-004",
+    "evidence-REC-005",
+    "evidence-REC-006",
+    "evidence-REC-007",
+    "evidence-REC-008",
+    "evidence-REC-009",
+    "evidence-REC-010",
+    "issue-REC-002",
+    "issue-REC-003",
+    "issue-REC-005",
+    "issue-REC-008",
+    "issue-REC-009",
+    "issue-REC-010",
+    "systems-AI-001",
+    "systems-AI-002",
+    "systems-AI-003",
+    "systems-AI-004",
+    "systems-AI-005",
+    "systems-AI-006",
+    "systems-AI-007",
+    "systems-AI-008"
+  ],
+  "produced_record_ids": [
+    "impact-AI-001-art50-1",
+    "impact-AI-002-art50-4-text",
+    "impact-AI-003-art50-4-media",
+    "impact-AI-003-art50-2",
+    "impact-AI-003-art111-4",
+    "impact-AI-004-art50-1",
+    "impact-AI-005-art50-3",
+    "impact-AI-005-art111-4",
+    "impact-AI-006-art50-4-text",
+    "impact-AI-007-art50-1",
+    "impact-AI-008-art50-4-media",
+    "impact-AI-008-art50-2",
+    "impact-AI-008-art111-4",
+    "impact-gap-AI-001",
+    "impact-gap-AI-002",
+    "impact-gap-AI-003",
+    "impact-gap-AI-003-art50-2",
+    "impact-gap-AI-003-art111-4",
+    "impact-gap-AI-004",
+    "impact-gap-AI-005",
+    "impact-gap-AI-005-art111-4",
+    "impact-gap-AI-006",
+    "impact-gap-AI-007",
+    "impact-gap-AI-008",
+    "impact-gap-AI-008-art50-2",
+    "impact-gap-AI-008-art111-4",
+    "impact-basis"
+  ],
+  "state": {
+    "impacts": [
+      {
+        "id": "impact-AI-001-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-001",
+          "evidence-REC-001"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-001",
+        "rule_ref": "art50-1",
+        "owner": "Learner Operations",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-002-art50-4-text",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-002",
+          "evidence-REC-002",
+          "issue-REC-002"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-002",
+        "rule_ref": "art50-4-text",
+        "owner": "Admissions",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-003-art50-4-media",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "evidence-REC-003",
+          "issue-REC-003"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-003",
+        "rule_ref": "art50-4-media",
+        "owner": "Communications",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-003-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "authority-gap-oj",
+          "authority-gap-amend",
+          "authority-gap-consolidated"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-003",
+        "rule_ref": "art50-2",
+        "owner": "Communications",
+        "reason": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": null,
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-003-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "systems-AI-003",
+          "authority-gap-oj",
+          "authority-gap-amend",
+          "authority-gap-consolidated"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-003",
+        "rule_ref": "art111-4",
+        "owner": "Communications",
+        "reason": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": null,
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-004-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-004",
+          "evidence-REC-004"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-004",
+        "rule_ref": "art50-1",
+        "owner": "Learning Experience",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-005-art50-3",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-005",
+          "evidence-REC-005",
+          "evidence-REC-006",
+          "issue-REC-005"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "rule_ref": "art50-3",
+        "owner": "Assessment Operations",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "unknown",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-005-art111-4",
+        "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "evidence_ids": [
+          "systems-AI-005",
+          "authority-gap-oj",
+          "authority-gap-amend",
+          "authority-gap-consolidated"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-005",
+        "rule_ref": "art111-4",
+        "owner": "Assessment Operations",
+        "reason": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "finding_scope": "possible provider transition only",
+        "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+      },
+      {
+        "id": "impact-AI-006-art50-4-text",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-006",
+          "evidence-REC-007"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-006",
+        "rule_ref": "art50-4-text",
+        "owner": "People Operations",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-007-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-007",
+          "evidence-REC-008",
+          "issue-REC-008"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-007",
+        "rule_ref": "art50-1",
+        "owner": "Marketing",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-008-art50-4-media",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "evidence-REC-009",
+          "evidence-REC-010",
+          "issue-REC-009",
+          "issue-REC-010"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "rule_ref": "art50-4-media",
+        "owner": "Communications",
+        "reason": "Required binding authority is unavailable or has changed.",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion.",
+        "source_version": "register-2026-08-26",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "finding_scope": "system transparency practice; Legal confirms statutory responsibility",
+        "legal_interpretation_status": "pending Legal review"
+      },
+      {
+        "id": "impact-AI-008-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "authority-gap-oj",
+          "authority-gap-amend",
+          "authority-gap-consolidated"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "rule_ref": "art50-2",
+        "owner": "Communications",
+        "reason": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": null,
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-AI-008-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "systems-AI-008",
+          "authority-gap-oj",
+          "authority-gap-amend",
+          "authority-gap-consolidated"
+        ],
+        "state": "unresolved",
+        "system_id": "AI-008",
+        "rule_ref": "art111-4",
+        "owner": "Communications",
+        "reason": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "finding_scope": "Academy provider duty only; deployer disclosure assessed separately",
+        "reported_product_market_entry": null,
+        "source_version": "register-2026-08-26",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      }
+    ],
+    "unaffected_items": [],
+    "conflicts": [],
+    "unresolved_items": [
+      {
+        "id": "impact-gap-AI-001",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-001-art50-1"
+        ],
+        "system_id": "AI-001",
+        "owner": "Learner Operations",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-002",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-002-art50-4-text",
+          "issue-REC-002"
+        ],
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-003",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-003-art50-4-media"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-003-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-003-art50-2"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-gap-AI-003-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-003-art111-4"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-gap-AI-004",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-004-art50-1"
+        ],
+        "system_id": "AI-004",
+        "owner": "Learning Experience",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-005",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-005-art50-3",
+          "issue-REC-005"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-005-art111-4",
+        "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "evidence_ids": [
+          "impact-AI-005-art111-4"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+      },
+      {
+        "id": "impact-gap-AI-006",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-006-art50-4-text"
+        ],
+        "system_id": "AI-006",
+        "owner": "People Operations",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-007",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-007-art50-1"
+        ],
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-008",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-008-art50-4-media",
+          "issue-REC-009",
+          "issue-REC-010"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "impact-gap-AI-008-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-008-art50-2"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "impact-gap-AI-008-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-008-art111-4"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      }
+    ],
+    "policy_context": []
+  },
+  "unresolved": [
+    {
+      "id": "gap-source-oj",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-amend",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-consolidated",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "authority-gap-oj",
+      "summary": "Required oj edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-amend",
+      "summary": "Required amend edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-consolidated",
+      "summary": "Required consolidated edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "issue-REC-002",
+      "summary": "No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-002",
+        "systems-AI-002"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-005",
+      "summary": "Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reported_state": "stale",
+      "related_records": [
+        "evidence-REC-005",
+        "systems-AI-005"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-009",
+      "summary": "Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "partial",
+      "related_records": [
+        "evidence-REC-009",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-010",
+      "summary": "No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-010",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "policy-coverage",
+      "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "owner": "Operations",
+      "resolution_need": "Supply versioned policy clauses for each remaining control."
+    },
+    {
+      "id": "issue-REC-003",
+      "summary": "Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-003",
+        "systems-AI-003"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "issue-REC-008",
+      "summary": "Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-008",
+        "systems-AI-007"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "impact-gap-AI-001",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-001-art50-1"
+      ],
+      "system_id": "AI-001",
+      "owner": "Learner Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-002",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text",
+        "issue-REC-002"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-003",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-003-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art50-2"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-003-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art111-4"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-004",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-004-art50-1"
+      ],
+      "system_id": "AI-004",
+      "owner": "Learning Experience",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-005",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3",
+        "issue-REC-005"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "impact-gap-AI-006",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-006-art50-4-text"
+      ],
+      "system_id": "AI-006",
+      "owner": "People Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-007",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-008",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media",
+        "issue-REC-009",
+        "issue-REC-010"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-008-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art50-2"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-008-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art111-4"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "impact-basis",
+      "summary": "Separate supported observations from conflicts and unresolved applicability.",
+      "evidence_ids": [
+        "authority-gap-amend",
+        "authority-gap-consolidated",
+        "authority-gap-oj",
+        "evidence-REC-001",
+        "evidence-REC-002",
+        "evidence-REC-003",
+        "evidence-REC-004",
+        "evidence-REC-005",
+        "evidence-REC-006",
+        "evidence-REC-007",
+        "evidence-REC-008",
+        "evidence-REC-009",
+        "evidence-REC-010",
+        "issue-REC-002",
+        "issue-REC-003",
+        "issue-REC-005",
+        "issue-REC-008",
+        "issue-REC-009",
+        "issue-REC-010",
+        "systems-AI-001",
+        "systems-AI-002",
+        "systems-AI-003",
+        "systems-AI-004",
+        "systems-AI-005",
+        "systems-AI-006",
+        "systems-AI-007",
+        "systems-AI-008"
+      ],
+      "concern": "Legal and operational decisions require verified evidence and human review.",
+      "options": [
+        "Record bounded provisional findings",
+        "Defer every finding"
+      ],
+      "chosen": "Preserve supported findings and mark unresolved issues and approvals pending.",
+      "source_basis": "Captured authority, system records, evidence and source calendar proposals.",
+      "rationale": "Unavailable proof or approval cannot establish compliance or an activated deadline.",
+      "tradeoffs": [
+        "The draft retains open questions until owners and reviewers respond."
+      ],
+      "downstream_effect": "Stage E must render the same states and keep dates tentative."
+    }
+  ]
+}

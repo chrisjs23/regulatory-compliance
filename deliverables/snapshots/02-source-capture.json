@@ -1,15 +1,15 @@
 {
   "schema_version": "regulatory-compliance-stage-snapshot/2",
-  "snapshot_id": "6abe8d46-4766-4900-810d-cff8c1661a6f",
-  "run_id": "7c205f14-85b1-4d1d-8522-eab941f05ea3",
+  "snapshot_id": "003338f2-a108-484a-b3e7-b7da2ea59305",
+  "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
   "stage": "source-capture",
   "sequence": 2,
-  "created_at": "2026-11-22T20:44:00.650441+00:00",
-  "status": "partial",
+  "created_at": "2026-11-22T23:44:56.261281+00:00",
+  "status": "blocked",
   "predecessor": {
-    "snapshot_id": "66af49fb-3e5f-4a41-b724-193d208f61e7",
+    "snapshot_id": "53f104d6-a73d-46d6-ac62-49d6e3f81f64",
     "path": "snapshots/01-scope.json",
-    "sha256": "sha256:78f51adabfaee2f291527af586a8a9f8fd35f68dba4c14772705d2b62d25dc86"
+    "sha256": "sha256:b6c09b2718e2849bbdb62980b8f2e1abf54bcc19a224453df0f7073e6431a45f"
   },
   "consumed_record_ids": [
     "source-systems-scope",
@@ -26,6 +26,9 @@
     "source-systems",
     "source-evidence",
     "source-calendar",
+    "gap-source-oj",
+    "gap-source-amend",
+    "gap-source-consolidated",
     "gap-source-time",
     "gap-source-policy",
     "capture-retention"
@@ -36,7 +39,7 @@
         "id": "source-systems-scope",
         "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
         "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
-        "retrieved_at": "2026-11-22T20:32:05.224336+00:00",
+        "retrieved_at": "2026-11-22T23:44:52.255476+00:00",
         "content_type": "text/csv",
         "content_hash": "sha256:19e5d4ef17c533c1d6951e9334b3f3628471ca864b45dfa3cf2ee47d0145b0eb",
         "local_reference": "sources/systems-scope.json",
@@ -66,7 +69,7 @@
         "source_role": "official-guidance",
         "authority": "advisory",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:54.770814+00:00",
+        "retrieved_at": "2026-11-22T23:44:53.236287+00:00",
         "version_metadata": {
           "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
           "stated_dates": [
@@ -88,19 +91,15 @@
         "source_role": "binding-regulation",
         "authority": "binding",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:55.017996+00:00",
-        "version_metadata": {
-          "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
-          "stated_dates": [],
-          "edition": "2024/1689 OJ"
-        },
+        "retrieved_at": "2026-11-22T23:44:53.472647+00:00",
+        "version_metadata": null,
         "content_type": "text/html",
-        "content_hash": "sha256:428c54d36a0c24f9aac870c36bec34dab8d6a9b4b9f8639b3439d596d7326dd5",
-        "local_reference": "sources/capture/oj.json",
+        "content_hash": null,
+        "local_reference": null,
         "access_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
-        "http_status": 200,
-        "retrieval_status": "retrieved",
-        "summary": "Document identified; claim applicability requires stage 03 review."
+        "http_status": 202,
+        "retrieval_status": "invalid",
+        "summary": "HTTP 202 did not deliver the requested document."
       },
       {
         "id": "source-amend",
@@ -109,19 +108,15 @@
         "source_role": "binding-regulation",
         "authority": "binding",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:55.893583+00:00",
-        "version_metadata": {
-          "title": "Regulation - EU - 2026/1744 - EN - EUR-Lex",
-          "stated_dates": [],
-          "edition": "2026/1744 OJ"
-        },
+        "retrieved_at": "2026-11-22T23:44:53.585815+00:00",
+        "version_metadata": null,
         "content_type": "text/html",
-        "content_hash": "sha256:068fc1cea6e34cd7d114b4d9da545f1b1e481f1ce399b78daf75e3d1d0b3cbbd",
-        "local_reference": "sources/capture/amend.json",
+        "content_hash": null,
+        "local_reference": null,
         "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
-        "http_status": 200,
-        "retrieval_status": "retrieved",
-        "summary": "Document identified; claim applicability requires stage 03 review."
+        "http_status": 202,
+        "retrieval_status": "invalid",
+        "summary": "HTTP 202 did not deliver the requested document."
       },
       {
         "id": "source-consolidated",
@@ -130,19 +125,15 @@
         "source_role": "other",
         "authority": "advisory",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:56.562164+00:00",
-        "version_metadata": {
-          "title": "EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
-          "stated_dates": [],
-          "edition": "02024R1689-20260727"
-        },
+        "retrieved_at": "2026-11-22T23:44:53.632852+00:00",
+        "version_metadata": null,
         "content_type": "text/html",
-        "content_hash": "sha256:5c1fd85ad739f4ca1459f62b3d3ce6a6bdc1f9e0b2bbbef4749e161674bb9510",
-        "local_reference": "sources/capture/consolidated.json",
+        "content_hash": null,
+        "local_reference": null,
         "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
-        "http_status": 200,
-        "retrieval_status": "retrieved",
-        "summary": "Document identified; claim applicability requires stage 03 review."
+        "http_status": 202,
+        "retrieval_status": "invalid",
+        "summary": "HTTP 202 did not deliver the requested document."
       },
       {
         "id": "source-time",
@@ -151,7 +142,7 @@
         "source_role": "official-guidance",
         "authority": "advisory",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:57.417265+00:00",
+        "retrieved_at": "2026-11-22T23:44:53.682012+00:00",
         "version_metadata": {
           "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
           "stated_dates": []
@@ -171,7 +162,7 @@
         "source_role": "official-guidance",
         "authority": "advisory",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:57.476383+00:00",
+        "retrieved_at": "2026-11-22T23:44:54.089494+00:00",
         "version_metadata": {
           "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
           "stated_dates": [
@@ -193,7 +184,7 @@
         "source_role": "internal-policy",
         "authority": "internal-control",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:57.614889+00:00",
+        "retrieved_at": "2026-11-22T23:44:54.370296+00:00",
         "version_metadata": null,
         "content_type": "text/plain",
         "content_hash": null,
@@ -210,7 +201,7 @@
         "source_role": "operational-record",
         "authority": "operational-evidence",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:57.660077+00:00",
+        "retrieved_at": "2026-11-22T23:44:54.427542+00:00",
         "version_metadata": {
           "row_revisions_or_dates": [
             "2026-04-15",
@@ -240,7 +231,7 @@
         "source_role": "operational-record",
         "authority": "operational-evidence",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:43:58.337465+00:00",
+        "retrieved_at": "2026-11-22T23:44:54.775618+00:00",
         "version_metadata": {
           "row_revisions_or_dates": [
             "2026-08-14",
@@ -270,7 +261,7 @@
         "source_role": "operational-record",
         "authority": "operational-evidence",
         "evidence_ids": [],
-        "retrieved_at": "2026-11-22T20:44:00.203278+00:00",
+        "retrieved_at": "2026-11-22T23:44:55.431340+00:00",
         "version_metadata": {
           "row_revisions_or_dates": [
             "calendar-2026-08-26"
@@ -288,6 +279,30 @@
     ]
   },
   "unresolved": [
+    {
+      "id": "gap-source-oj",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-amend",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-consolidated",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
     {
       "id": "gap-source-time",
       "summary": "Could not establish a page version suitable for the review day.",

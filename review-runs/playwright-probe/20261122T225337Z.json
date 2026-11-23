@@ -1,0 +1,15 @@
+{
+  "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856#5bcbdfef18004bcf8cd2d6f32125c9ff",
+  "read_at": "2026-11-22T22:53:37.752508+00:00",
+  "method": "signed-out Playwright, incremental scroll",
+  "excerpts": [
+    {
+      "section": "AI-001",
+      "passage": "Learners exchange questions and generated replies directly with the licensed support chat. It does not classify biometric data or infer emotions or intentions. The existing notice and evidence reports remain the source for disclosure practice."
+    },
+    {
+      "section": "Internal AI-use policy",
+      "passage": "Policy version: AI-POL-2026-08-15"
+    }
+  ]
+}

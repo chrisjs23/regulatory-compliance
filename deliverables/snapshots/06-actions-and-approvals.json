@@ -1,0 +1,1283 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+  "snapshot_id": "d4f402be-4895-4e9a-a115-ca2f36f9664f",
+  "sequence": 6,
+  "stage": "actions-and-approvals",
+  "created_at": "2026-11-22T23:44:56.283376+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "path": "snapshots/05-impact-analysis.json",
+    "snapshot_id": "37c84e13-dcf2-449a-be39-5d3e05034118",
+    "sha256": "sha256:15272abea6d681e8c271b1458b4ab48e3a7918dd08fb374ba6c3df5832adde9b"
+  },
+  "consumed_record_ids": [
+    "calendar-ACT-001",
+    "calendar-ACT-002",
+    "calendar-ACT-003",
+    "calendar-ACT-004",
+    "calendar-ACT-005",
+    "calendar-ACT-006",
+    "calendar-ACT-007",
+    "calendar-ACT-008",
+    "impact-AI-001-art50-1",
+    "impact-AI-002-art50-4-text",
+    "impact-AI-003-art111-4",
+    "impact-AI-003-art50-2",
+    "impact-AI-003-art50-4-media",
+    "impact-AI-004-art50-1",
+    "impact-AI-005-art111-4",
+    "impact-AI-005-art50-3",
+    "impact-AI-006-art50-4-text",
+    "impact-AI-007-art50-1",
+    "impact-AI-008-art111-4",
+    "impact-AI-008-art50-2",
+    "impact-AI-008-art50-4-media"
+  ],
+  "produced_record_ids": [
+    "action-ACT-001",
+    "action-ACT-002",
+    "action-ACT-003",
+    "action-ACT-004",
+    "action-ACT-005",
+    "action-ACT-006",
+    "action-ACT-007",
+    "action-ACT-008",
+    "approval-ACT-001",
+    "approval-ACT-002",
+    "approval-ACT-003",
+    "approval-ACT-004",
+    "approval-ACT-005",
+    "approval-ACT-006",
+    "approval-ACT-007",
+    "approval-ACT-008",
+    "escalation-impact-AI-001-art50-1",
+    "escalation-impact-AI-002-art50-4-text",
+    "escalation-impact-AI-003-art50-4-media",
+    "escalation-impact-AI-003-art50-2",
+    "escalation-impact-AI-003-art111-4",
+    "escalation-impact-AI-004-art50-1",
+    "escalation-impact-AI-005-art50-3",
+    "escalation-impact-AI-005-art111-4",
+    "escalation-impact-AI-006-art50-4-text",
+    "escalation-impact-AI-007-art50-1",
+    "escalation-impact-AI-008-art50-4-media",
+    "escalation-impact-AI-008-art50-2",
+    "escalation-impact-AI-008-art111-4",
+    "request-ACT-001",
+    "request-ACT-002",
+    "request-ACT-003",
+    "request-ACT-004",
+    "request-ACT-005",
+    "request-ACT-006",
+    "request-ACT-007",
+    "request-ACT-008",
+    "request-impact-AI-001-art50-1",
+    "request-impact-AI-002-art50-4-text",
+    "request-impact-AI-003-art50-4-media",
+    "request-impact-AI-003-art50-2",
+    "request-impact-AI-003-art111-4",
+    "request-impact-AI-004-art50-1",
+    "request-impact-AI-005-art50-3",
+    "request-impact-AI-005-art111-4",
+    "request-impact-AI-006-art50-4-text",
+    "request-impact-AI-007-art50-1",
+    "request-impact-AI-008-art50-4-media",
+    "request-impact-AI-008-art50-2",
+    "request-impact-AI-008-art111-4",
+    "action-basis"
+  ],
+  "state": {
+    "proposed_actions": [
+      {
+        "id": "action-ACT-001",
+        "summary": "Add and verify first-interaction AI notice",
+        "evidence_ids": [
+          "calendar-ACT-001",
+          "impact-AI-004-art50-1"
+        ],
+        "action_id": "ACT-001",
+        "system_id": "AI-004",
+        "owner": "Learning Experience",
+        "proposed_due_date": "2026-09-04",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "planned",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-004-art50-1"
+      },
+      {
+        "id": "action-ACT-002",
+        "summary": "Resolve disclosure evidence conflict",
+        "evidence_ids": [
+          "calendar-ACT-002",
+          "impact-AI-007-art50-1"
+        ],
+        "action_id": "ACT-002",
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "proposed_due_date": "2026-09-03",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "open",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-007-art50-1"
+      },
+      {
+        "id": "action-ACT-003",
+        "summary": "Confirm recipient disclosure practice",
+        "evidence_ids": [
+          "calendar-ACT-003",
+          "impact-AI-002-art50-4-text"
+        ],
+        "action_id": "ACT-003",
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "proposed_due_date": "2026-09-08",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "open",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-002-art50-4-text"
+      },
+      {
+        "id": "action-ACT-004",
+        "summary": "Verify machine-readable provenance after publishing",
+        "evidence_ids": [
+          "calendar-ACT-004",
+          "impact-AI-003-art50-4-media"
+        ],
+        "action_id": "ACT-004",
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "proposed_due_date": "2026-09-10",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "open",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-003-art50-4-media"
+      },
+      {
+        "id": "action-ACT-005",
+        "summary": "Refresh provider-role and release evidence",
+        "evidence_ids": [
+          "calendar-ACT-005",
+          "impact-AI-005-art50-3"
+        ],
+        "action_id": "ACT-005",
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "proposed_due_date": "2026-09-12",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "open",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-005-art50-3"
+      },
+      {
+        "id": "action-ACT-006",
+        "summary": "Complete provenance test",
+        "evidence_ids": [
+          "calendar-ACT-006",
+          "impact-AI-008-art50-4-media"
+        ],
+        "action_id": "ACT-006",
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "proposed_due_date": "2026-09-09",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "open",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-008-art50-4-media"
+      },
+      {
+        "id": "action-ACT-007",
+        "summary": "Review exception request",
+        "evidence_ids": [
+          "calendar-ACT-007",
+          "impact-AI-008-art50-4-media"
+        ],
+        "action_id": "ACT-007",
+        "system_id": "AI-008",
+        "owner": "Legal",
+        "proposed_due_date": "2026-09-15",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "blocked",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": "impact-AI-008-art50-4-media"
+      },
+      {
+        "id": "action-ACT-008",
+        "summary": "Quarterly AI register evidence review",
+        "evidence_ids": [
+          "calendar-ACT-008"
+        ],
+        "action_id": "ACT-008",
+        "system_id": "ALL",
+        "owner": "Operations",
+        "proposed_due_date": "2026-10-02",
+        "source_version": "calendar-2026-08-26",
+        "approval_status": "pending",
+        "source_status": "scheduled",
+        "rationale": "Source calendar proposal only; no approved deadline or activation was supplied.",
+        "linked_impact_id": null
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "approval-ACT-001",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-001"
+        ],
+        "status": "pending",
+        "action_id": "ACT-001",
+        "reviewer": "Operations",
+        "subject": "action-ACT-001",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-002",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-002"
+        ],
+        "status": "pending",
+        "action_id": "ACT-002",
+        "reviewer": "Operations",
+        "subject": "action-ACT-002",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-003",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-003"
+        ],
+        "status": "pending",
+        "action_id": "ACT-003",
+        "reviewer": "Legal",
+        "subject": "action-ACT-003",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-004",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-004"
+        ],
+        "status": "pending",
+        "action_id": "ACT-004",
+        "reviewer": "Operations",
+        "subject": "action-ACT-004",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-005",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-005"
+        ],
+        "status": "pending",
+        "action_id": "ACT-005",
+        "reviewer": "Legal",
+        "subject": "action-ACT-005",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-006",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-006"
+        ],
+        "status": "pending",
+        "action_id": "ACT-006",
+        "reviewer": "Operations",
+        "subject": "action-ACT-006",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-007",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-007"
+        ],
+        "status": "pending",
+        "action_id": "ACT-007",
+        "reviewer": "Legal",
+        "subject": "action-ACT-007",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      },
+      {
+        "id": "approval-ACT-008",
+        "summary": "Review proposed action and date before activation.",
+        "evidence_ids": [
+          "action-ACT-008"
+        ],
+        "status": "pending",
+        "action_id": "ACT-008",
+        "reviewer": "Operations",
+        "subject": "action-ACT-008",
+        "resolution_need": "Record a verified decision against the reviewed draft and source version."
+      }
+    ],
+    "escalations": [
+      {
+        "id": "escalation-impact-AI-001-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-001-art50-1"
+        ],
+        "system_id": "AI-001",
+        "owner": "Learner Operations",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-002-art50-4-text",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-002-art50-4-text"
+        ],
+        "system_id": "AI-002",
+        "owner": "Admissions",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-003-art50-4-media",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-003-art50-4-media"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-003-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-003-art50-2"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "escalation-impact-AI-003-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-003-art111-4"
+        ],
+        "system_id": "AI-003",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "escalation-impact-AI-004-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-004-art50-1"
+        ],
+        "system_id": "AI-004",
+        "owner": "Learning Experience",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-005-art50-3",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-005-art50-3"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-005-art111-4",
+        "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+        "evidence_ids": [
+          "impact-AI-005-art111-4"
+        ],
+        "system_id": "AI-005",
+        "owner": "Assessment Operations",
+        "reviewer": "Legal",
+        "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+      },
+      {
+        "id": "escalation-impact-AI-006-art50-4-text",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-006-art50-4-text"
+        ],
+        "system_id": "AI-006",
+        "owner": "People Operations",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-007-art50-1",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-007-art50-1"
+        ],
+        "system_id": "AI-007",
+        "owner": "Marketing",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-008-art50-4-media",
+        "summary": "Required binding authority is unavailable or has changed.",
+        "evidence_ids": [
+          "impact-AI-008-art50-4-media"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+      },
+      {
+        "id": "escalation-impact-AI-008-art50-2",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-008-art50-2"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      },
+      {
+        "id": "escalation-impact-AI-008-art111-4",
+        "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+        "evidence_ids": [
+          "impact-AI-008-art111-4"
+        ],
+        "system_id": "AI-008",
+        "owner": "Communications",
+        "reviewer": "Legal",
+        "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+      }
+    ],
+    "review_requests": [
+      {
+        "id": "request-ACT-001",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-001",
+          "calendar-ACT-001",
+          "impact-AI-004-art50-1"
+        ],
+        "subject": "action-ACT-001",
+        "system_id": "AI-004",
+        "action_id": "ACT-001",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Operations",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-002",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-002",
+          "calendar-ACT-002",
+          "impact-AI-007-art50-1"
+        ],
+        "subject": "action-ACT-002",
+        "system_id": "AI-007",
+        "action_id": "ACT-002",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Operations",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-003",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-003",
+          "calendar-ACT-003",
+          "impact-AI-002-art50-4-text"
+        ],
+        "subject": "action-ACT-003",
+        "system_id": "AI-002",
+        "action_id": "ACT-003",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-004",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-004",
+          "calendar-ACT-004",
+          "impact-AI-003-art50-4-media"
+        ],
+        "subject": "action-ACT-004",
+        "system_id": "AI-003",
+        "action_id": "ACT-004",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Operations",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-005",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-005",
+          "calendar-ACT-005",
+          "impact-AI-005-art50-3"
+        ],
+        "subject": "action-ACT-005",
+        "system_id": "AI-005",
+        "action_id": "ACT-005",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-006",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-006",
+          "calendar-ACT-006",
+          "impact-AI-008-art50-4-media"
+        ],
+        "subject": "action-ACT-006",
+        "system_id": "AI-008",
+        "action_id": "ACT-006",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Operations",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-007",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-007",
+          "calendar-ACT-007",
+          "impact-AI-008-art50-4-media"
+        ],
+        "subject": "action-ACT-007",
+        "system_id": "AI-008",
+        "action_id": "ACT-007",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-ACT-008",
+        "summary": "Draft request for action and date review.",
+        "evidence_ids": [
+          "action-ACT-008",
+          "calendar-ACT-008"
+        ],
+        "subject": "action-ACT-008",
+        "system_id": "ALL",
+        "action_id": "ACT-008",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "calendar-2026-08-26",
+        "reviewer": "Operations",
+        "question": "Approve or amend this proposed action and date after reviewing its evidence?",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-001-art50-1",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-001-art50-1"
+        ],
+        "subject": "impact-AI-001-art50-1",
+        "system_id": "AI-001",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-002-art50-4-text",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-002-art50-4-text"
+        ],
+        "subject": "impact-AI-002-art50-4-text",
+        "system_id": "AI-002",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-003-art50-4-media",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-003-art50-4-media"
+        ],
+        "subject": "impact-AI-003-art50-4-media",
+        "system_id": "AI-003",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-003-art50-2",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-003-art50-2"
+        ],
+        "subject": "impact-AI-003-art50-2",
+        "system_id": "AI-003",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal confirms role; Operations obtains supplier marking evidence.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-003-art111-4",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-003-art111-4"
+        ],
+        "subject": "impact-AI-003-art111-4",
+        "system_id": "AI-003",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal confirms role; Operations obtains supplier marking evidence.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-004-art50-1",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-004-art50-1"
+        ],
+        "subject": "impact-AI-004-art50-1",
+        "system_id": "AI-004",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-005-art50-3",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-005-art50-3"
+        ],
+        "subject": "impact-AI-005-art50-3",
+        "system_id": "AI-005",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-005-art111-4",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-005-art111-4"
+        ],
+        "subject": "impact-AI-005-art111-4",
+        "system_id": "AI-005",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": null,
+        "reviewer": "Legal",
+        "question": "Obtain current release and role evidence; Legal assesses eligibility.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-006-art50-4-text",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-006-art50-4-text"
+        ],
+        "subject": "impact-AI-006-art50-4-text",
+        "system_id": "AI-006",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-007-art50-1",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-007-art50-1"
+        ],
+        "subject": "impact-AI-007-art50-1",
+        "system_id": "AI-007",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-008-art50-4-media",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-008-art50-4-media"
+        ],
+        "subject": "impact-AI-008-art50-4-media",
+        "system_id": "AI-008",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal must verify the official edition before any dependent conclusion.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-008-art50-2",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-008-art50-2"
+        ],
+        "subject": "impact-AI-008-art50-2",
+        "system_id": "AI-008",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal confirms role; Operations obtains supplier marking evidence.",
+        "delivery_status": "draft-not-sent"
+      },
+      {
+        "id": "request-impact-AI-008-art111-4",
+        "summary": "Draft request to resolve impact basis.",
+        "evidence_ids": [
+          "impact-AI-008-art111-4"
+        ],
+        "subject": "impact-AI-008-art111-4",
+        "system_id": "AI-008",
+        "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+        "source_version": "register-2026-08-26",
+        "reviewer": "Legal",
+        "question": "Legal confirms role; Operations obtains supplier marking evidence.",
+        "delivery_status": "draft-not-sent"
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "gap-source-oj",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-amend",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-consolidated",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "authority-gap-oj",
+      "summary": "Required oj edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-amend",
+      "summary": "Required amend edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-consolidated",
+      "summary": "Required consolidated edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "issue-REC-002",
+      "summary": "No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-002",
+        "systems-AI-002"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-005",
+      "summary": "Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reported_state": "stale",
+      "related_records": [
+        "evidence-REC-005",
+        "systems-AI-005"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-009",
+      "summary": "Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "partial",
+      "related_records": [
+        "evidence-REC-009",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "issue-REC-010",
+      "summary": "No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reported_state": "missing",
+      "related_records": [
+        "evidence-REC-010",
+        "systems-AI-008"
+      ],
+      "resolution_need": "Obtain missing or current proof from the record owner."
+    },
+    {
+      "id": "policy-coverage",
+      "summary": "Retained policy evidence covers only selected passages. Other control requirements remain unresolved.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "owner": "Operations",
+      "resolution_need": "Supply versioned policy clauses for each remaining control."
+    },
+    {
+      "id": "issue-REC-003",
+      "summary": "Visible label exists but exported platform copy may have lost metadata",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-003",
+        "systems-AI-003"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "issue-REC-008",
+      "summary": "Owner says a banner exists but the current capture shows none",
+      "evidence_ids": [
+        "source-evidence",
+        "source-systems"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reported_state": "conflicting",
+      "related_records": [
+        "evidence-REC-008",
+        "systems-AI-007"
+      ],
+      "resolution_need": "Obtain current owner evidence and reconcile competing reports."
+    },
+    {
+      "id": "impact-gap-AI-001",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-001-art50-1"
+      ],
+      "system_id": "AI-001",
+      "owner": "Learner Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-002",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text",
+        "issue-REC-002"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-003",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-003-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art50-2"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-003-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art111-4"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-004",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-004-art50-1"
+      ],
+      "system_id": "AI-004",
+      "owner": "Learning Experience",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-005",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3",
+        "issue-REC-005"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "impact-gap-AI-006",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-006-art50-4-text"
+      ],
+      "system_id": "AI-006",
+      "owner": "People Operations",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-007",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-008",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media",
+        "issue-REC-009",
+        "issue-REC-010"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "impact-gap-AI-008-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art50-2"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "impact-gap-AI-008-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art111-4"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "escalation-impact-AI-001-art50-1",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-001-art50-1"
+      ],
+      "system_id": "AI-001",
+      "owner": "Learner Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-002-art50-4-text",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-002-art50-4-text"
+      ],
+      "system_id": "AI-002",
+      "owner": "Admissions",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-003-art50-4-media",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-003-art50-4-media"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-003-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art50-2"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "escalation-impact-AI-003-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-003-art111-4"
+      ],
+      "system_id": "AI-003",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "escalation-impact-AI-004-art50-1",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-004-art50-1"
+      ],
+      "system_id": "AI-004",
+      "owner": "Learning Experience",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-005-art50-3",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-005-art50-3"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-005-art111-4",
+      "summary": "The current release, market-entry date and provider role are unknown; qualifying generative output is not established.",
+      "evidence_ids": [
+        "impact-AI-005-art111-4"
+      ],
+      "system_id": "AI-005",
+      "owner": "Assessment Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Obtain current release and role evidence; Legal assesses eligibility."
+    },
+    {
+      "id": "escalation-impact-AI-006-art50-4-text",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-006-art50-4-text"
+      ],
+      "system_id": "AI-006",
+      "owner": "People Operations",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-007-art50-1",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-007-art50-1"
+      ],
+      "system_id": "AI-007",
+      "owner": "Marketing",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-008-art50-4-media",
+      "summary": "Required binding authority is unavailable or has changed.",
+      "evidence_ids": [
+        "impact-AI-008-art50-4-media"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal must verify the official edition before any dependent conclusion."
+    },
+    {
+      "id": "escalation-impact-AI-008-art50-2",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art50-2"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    },
+    {
+      "id": "escalation-impact-AI-008-art111-4",
+      "summary": "Provider role, product release or binding authority is not verified for this provider-only rule.",
+      "evidence_ids": [
+        "impact-AI-008-art111-4"
+      ],
+      "system_id": "AI-008",
+      "owner": "Communications",
+      "reviewer": "Legal",
+      "resolution_need": "Legal confirms role; Operations obtains supplier marking evidence."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "action-basis",
+      "summary": "Keep calendar dates and review requests as draft proposals.",
+      "evidence_ids": [
+        "calendar-ACT-001",
+        "calendar-ACT-002",
+        "calendar-ACT-003",
+        "calendar-ACT-004",
+        "calendar-ACT-005",
+        "calendar-ACT-006",
+        "calendar-ACT-007",
+        "calendar-ACT-008",
+        "impact-AI-001-art50-1",
+        "impact-AI-002-art50-4-text",
+        "impact-AI-003-art111-4",
+        "impact-AI-003-art50-2",
+        "impact-AI-003-art50-4-media",
+        "impact-AI-004-art50-1",
+        "impact-AI-005-art111-4",
+        "impact-AI-005-art50-3",
+        "impact-AI-006-art50-4-text",
+        "impact-AI-007-art50-1",
+        "impact-AI-008-art111-4",
+        "impact-AI-008-art50-2",
+        "impact-AI-008-art50-4-media"
+      ],
+      "concern": "Legal and operational decisions require verified evidence and human review.",
+      "options": [
+        "Record bounded provisional findings",
+        "Defer every finding"
+      ],
+      "chosen": "Preserve supported findings and mark unresolved issues and approvals pending.",
+      "source_basis": "Captured authority, system records, evidence and source calendar proposals.",
+      "rationale": "Unavailable proof or approval cannot establish compliance or an activated deadline.",
+      "tradeoffs": [
+        "The draft retains open questions until owners and reviewers respond."
+      ],
+      "downstream_effect": "Stage E must render the same states and keep dates tentative."
+    }
+  ]
+}

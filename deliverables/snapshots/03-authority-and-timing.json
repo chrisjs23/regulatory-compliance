@@ -1,0 +1,248 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "98d7b402-5aa2-4fbc-b631-ae0e47552264",
+  "snapshot_id": "4c6a2b91-44d8-4683-99cf-794b61ed375a",
+  "sequence": 3,
+  "stage": "authority-and-timing",
+  "created_at": "2026-11-22T23:44:56.267771+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "path": "snapshots/02-source-capture.json",
+    "snapshot_id": "003338f2-a108-484a-b3e7-b7da2ea59305",
+    "sha256": "sha256:d9f46f877bb239d4cc11fa63aa2d48791c45b635f92f960470f9ed14a66e952b"
+  },
+  "consumed_record_ids": [
+    "gap-source-amend",
+    "gap-source-consolidated",
+    "gap-source-oj",
+    "gap-source-policy",
+    "gap-source-time",
+    "source-amend",
+    "source-consolidated",
+    "source-faq",
+    "source-law",
+    "source-oj",
+    "source-time"
+  ],
+  "produced_record_ids": [
+    "law-context",
+    "faq-context",
+    "time-context",
+    "authority-gap-oj",
+    "authority-gap-amend",
+    "authority-gap-consolidated",
+    "authority-basis"
+  ],
+  "state": {
+    "binding_rules": [],
+    "timing_rules": [],
+    "guidance_context": [
+      {
+        "id": "law-context",
+        "summary": "Service Desk currency warning; OJ acts control.",
+        "evidence_ids": [
+          "source-law"
+        ],
+        "passages": [
+          {
+            "source_id": "source-law",
+            "block": 183,
+            "text": "Digital Omnibus Disclaimer"
+          },
+          {
+            "source_id": "source-law",
+            "block": 185,
+            "text": "The text displayed here is based on the EUR-Lex consolidated version of the AI Act as at 27 July 2026. Where shown, “NEW” and “AMENDED” identify passages containing additions or amendments to the original AI Act made by the Digital Omnibus on AI. For more information, refer to the FAQ section under 'Digital Omnibus'."
+          }
+        ]
+      },
+      {
+        "id": "faq-context",
+        "summary": "Commission explanation of the provider-only marking transition.",
+        "evidence_ids": [
+          "source-faq"
+        ],
+        "passages": [
+          {
+            "source_id": "source-faq",
+            "block": 113,
+            "text": "Article 50 of the AI Act applies as from 2 August 2026. From that date onwards, providers and deployers of AI systems must comply with the transparency obligations laid down in that provision. A limited grace period is envisaged only for AI systems placed on the market before 2 August 2026 and only as regards the marking and detection obligation for AI-generated content (Article 50(2) of the AI Act). Providers of such systems must comply with those obligations only as from 2 December 2026."
+          },
+          {
+            "source_id": "source-faq",
+            "block": 118,
+            "text": "Last update"
+          },
+          {
+            "source_id": "source-faq",
+            "block": 119,
+            "text": "24 July 2026"
+          }
+        ]
+      },
+      {
+        "id": "time-context",
+        "summary": "Timeline guidance; capture did not establish the page revision for the review date.",
+        "evidence_ids": [
+          "source-time"
+        ],
+        "passages": [
+          {
+            "source_id": "source-time",
+            "block": 26,
+            "text": "02 Aug 2026"
+          },
+          {
+            "source_id": "source-time",
+            "block": 28,
+            "text": "Transparency rules (Article 50) start to apply."
+          },
+          {
+            "source_id": "source-time",
+            "block": 31,
+            "text": "02 Dec 2026"
+          },
+          {
+            "source_id": "source-time",
+            "block": 32,
+            "text": "New prohibitions + Article 50(2) transition apply **"
+          },
+          {
+            "source_id": "source-time",
+            "block": 34,
+            "text": "Transitional deadline for certain providers of AI systems, including GPAI systems, generating synthetic content, that were already placed on the market before 02 Aug 2026, to comply with Article 50(2)."
+          },
+          {
+            "source_id": "source-time",
+            "block": 41,
+            "text": "** Following the Digital Omnibus on AI, certain provisions of the AI Act have been amended. For more information, refer to the FAQ section under 'Digital Omnibus."
+          }
+        ]
+      }
+    ],
+    "authority_blockers": [
+      {
+        "id": "authority-gap-oj",
+        "summary": "Required oj edition unavailable, unsuitable or changed since passage review.",
+        "evidence_ids": [
+          "source-oj"
+        ],
+        "owner": "Legal",
+        "resolution_need": "Verify the official edition and recheck passage locators."
+      },
+      {
+        "id": "authority-gap-amend",
+        "summary": "Required amend edition unavailable, unsuitable or changed since passage review.",
+        "evidence_ids": [
+          "source-amend"
+        ],
+        "owner": "Legal",
+        "resolution_need": "Verify the official edition and recheck passage locators."
+      },
+      {
+        "id": "authority-gap-consolidated",
+        "summary": "Required consolidated edition unavailable, unsuitable or changed since passage review.",
+        "evidence_ids": [
+          "source-consolidated"
+        ],
+        "owner": "Legal",
+        "resolution_need": "Verify the official edition and recheck passage locators."
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "authority-basis",
+      "summary": "Use reviewed OJ text and amendment with a documentary cross-check.",
+      "evidence_ids": [
+        "source-amend",
+        "source-consolidated",
+        "source-faq",
+        "source-law",
+        "source-oj",
+        "source-time"
+      ],
+      "concern": "Limits of source evidence",
+      "options": [
+        "Use individual claims with evidence",
+        "Defer the entire review"
+      ],
+      "chosen": "Defer dependent conclusions where evidence is insufficient",
+      "source_basis": "Current captured records and identified gaps",
+      "rationale": "A missing authority prevents formal conclusions; missing operational records can be isolated.",
+      "tradeoffs": [
+        "Changed official text requires another passage review."
+      ],
+      "downstream_effect": "Stage D must honor authority blockers, role distinctions and unresolved evidence."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "gap-source-oj",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-amend",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-consolidated",
+      "summary": "HTTP 202 did not deliver the requested document.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-time",
+      "summary": "Could not establish a page version suitable for the review day.",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "HTTP 403 on the disclosed route.",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "authority-gap-oj",
+      "summary": "Required oj edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-amend",
+      "summary": "Required amend edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    },
+    {
+      "id": "authority-gap-consolidated",
+      "summary": "Required consolidated edition unavailable, unsuitable or changed since passage review.",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "owner": "Legal",
+      "resolution_need": "Verify the official edition and recheck passage locators."
+    }
+  ]
+}

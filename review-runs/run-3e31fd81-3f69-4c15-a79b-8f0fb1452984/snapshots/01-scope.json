@@ -1,0 +1,97 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "364783cb-53cb-4595-b7ab-7dd731f9e3c4",
+  "run_id": "2bc70f7b-f84b-40d2-b2d8-bb708e45c9b9",
+  "stage": "scope",
+  "sequence": 1,
+  "created_at": "2026-11-22T23:44:19.131922+00:00",
+  "status": "blocked",
+  "predecessor": null,
+  "consumed_record_ids": [],
+  "produced_record_ids": [
+    "source-systems-scope",
+    "scope-selection",
+    "scope-gap"
+  ],
+  "supersedes_run_id": "75cff7ce-c62c-405a-9014-65049ec2197c",
+  "retry_reason": "Fresh end-to-end verification after Stage E review",
+  "state": {
+    "as_of": "2026-08-26T00:00:00+01:00",
+    "date_precision": "day",
+    "timezone": "Europe/Dublin",
+    "review_type": "broad-inventory",
+    "systems_in_scope": [
+      "All registered systems (IDs unresolved)"
+    ],
+    "audiences": [
+      "Legal",
+      "Operations"
+    ],
+    "approval_gates": [
+      "System owners verify facts",
+      "Legal reviews interpretation and exceptions",
+      "Operations approves policy activation, deadlines and incident closure"
+    ],
+    "routes": {
+      "LAW": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+      "OJ": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "AMEND": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+      "CONSOLIDATED": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+      "TIME": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+      "FAQ": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+      "POLICY": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+      "SYSTEMS": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+      "EVIDENCE": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+      "CALENDAR": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA"
+    },
+    "source_attempts": [
+      {
+        "id": "source-systems-scope",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "retrieved_at": "2026-11-22T23:44:19.127440+00:00",
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "version_metadata": null,
+        "evidence_ids": [],
+        "authority": "operational-evidence",
+        "source_role": "operational-record",
+        "retrieval_status": "unavailable",
+        "summary": "SYSTEMS read failed (URLError)"
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "scope-gap",
+      "summary": "SYSTEMS read failed (URLError)",
+      "evidence_ids": [
+        "source-systems-scope"
+      ],
+      "owner": "Compliance and Operations Manager",
+      "resolution_need": "Reconcile scope with requester and system owners, then retry."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "scope-selection",
+      "summary": "Apply the requester's selected scope.",
+      "evidence_ids": [
+        "source-systems-scope"
+      ],
+      "concern": "Which systems should be evaluated?",
+      "options": [
+        "broad-inventory",
+        "focused-change"
+      ],
+      "chosen": "broad-inventory",
+      "source_basis": "Requester CLI selection and SYSTEMS register",
+      "rationale": "The requester defines the review population using registered IDs.",
+      "tradeoffs": [
+        "Scope verification requires a current SYSTEMS read."
+      ],
+      "downstream_effect": "A register read failure or unknown ID blocks evaluation."
+    }
+  ]
+}

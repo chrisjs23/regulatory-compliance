@@ -1,0 +1,354 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "ccb98f90-a2e7-4af0-8693-344fab0e88b6",
+  "run_id": "2bc70f7b-f84b-40d2-b2d8-bb708e45c9b9",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-11-22T23:44:19.137518+00:00",
+  "status": "blocked",
+  "predecessor": {
+    "snapshot_id": "364783cb-53cb-4595-b7ab-7dd731f9e3c4",
+    "path": "snapshots/01-scope.json",
+    "sha256": "sha256:4e34b897a05f72dd644991e98b6215a453d77a998da4a643f544e196a16a6e1f"
+  },
+  "consumed_record_ids": [
+    "source-systems-scope",
+    "scope-selection",
+    "scope-gap"
+  ],
+  "produced_record_ids": [
+    "source-law",
+    "source-oj",
+    "source-amend",
+    "source-consolidated",
+    "source-time",
+    "source-faq",
+    "source-policy",
+    "source-systems",
+    "source-evidence",
+    "source-calendar",
+    "scope-gap",
+    "gap-source-systems-scope",
+    "gap-source-law",
+    "gap-source-oj",
+    "gap-source-amend",
+    "gap-source-consolidated",
+    "gap-source-time",
+    "gap-source-faq",
+    "gap-source-policy",
+    "gap-source-systems",
+    "gap-source-evidence",
+    "gap-source-calendar",
+    "capture-retention"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "source-systems-scope",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "retrieved_at": "2026-11-22T23:44:19.127440+00:00",
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "version_metadata": null,
+        "evidence_ids": [],
+        "authority": "operational-evidence",
+        "source_role": "operational-record",
+        "retrieval_status": "unavailable",
+        "summary": "SYSTEMS read failed (URLError)",
+        "label": "SYSTEMS"
+      },
+      {
+        "id": "source-law",
+        "label": "LAW",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.134039+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-oj",
+        "label": "OJ",
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.134518+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-amend",
+        "label": "AMEND",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.134837+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-consolidated",
+        "label": "CONSOLIDATED",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "source_role": "other",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.135078+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-time",
+        "label": "TIME",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.135314+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-faq",
+        "label": "FAQ",
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.135561+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-policy",
+        "label": "POLICY",
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.135910+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-systems",
+        "label": "SYSTEMS",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.136636+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-evidence",
+        "label": "EVIDENCE",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.136971+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk/export?format=csv",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      },
+      {
+        "id": "source-calendar",
+        "label": "CALENDAR",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "evidence_ids": [],
+        "retrieved_at": "2026-11-22T23:44:19.137229+00:00",
+        "version_metadata": null,
+        "content_type": "unknown",
+        "content_hash": null,
+        "local_reference": null,
+        "access_url": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA/export?format=csv",
+        "retrieval_status": "unavailable",
+        "summary": "Read failed (URLError)."
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "scope-gap",
+      "summary": "SYSTEMS read failed (URLError)",
+      "evidence_ids": [
+        "source-systems-scope"
+      ],
+      "owner": "Compliance and Operations Manager",
+      "resolution_need": "Reconcile scope with requester and system owners, then retry."
+    },
+    {
+      "id": "gap-source-systems-scope",
+      "summary": "SYSTEMS read failed (URLError)",
+      "evidence_ids": [
+        "source-systems-scope"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-law",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-law"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-oj",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-oj"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-amend",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-amend"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-consolidated",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-consolidated"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-time",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-time"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-faq",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-faq"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-policy",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-policy"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-systems",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-systems"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-evidence",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-evidence"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    },
+    {
+      "id": "gap-source-calendar",
+      "summary": "Read failed (URLError).",
+      "evidence_ids": [
+        "source-calendar"
+      ],
+      "resolution_need": "Obtain and verify the disclosed source or resolve the indicated extract gaps on retry."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "capture-retention",
+      "summary": "Retain reviewable public text and selected operational extracts.",
+      "evidence_ids": [
+        "source-systems-scope",
+        "source-law",
+        "source-oj",
+        "source-amend",
+        "source-consolidated",
+        "source-time",
+        "source-faq",
+        "source-policy",
+        "source-systems",
+        "source-evidence",
+        "source-calendar"
+      ],
+      "concern": "Preserve source evidence within disclosure limits.",
+      "options": [
+        "Full captures",
+        "Selected extracts with locators"
+      ],
+      "chosen": "Selected extracts with locators",
+      "source_basis": "Requester interview and actual responses.",
+      "rationale": "Persist only permitted internal fields. Keep version uncertainty and failed attempts visible.",
+      "tradeoffs": [
+        "Changed internal prose can need privacy review before inclusion."
+      ],
+      "downstream_effect": "Stage 03 must resolve authority blockers before formal dependent conclusions."
+    }
+  ]
+}
